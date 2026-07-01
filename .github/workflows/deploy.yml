@@ -1,0 +1,67 @@
+name: Deploy a GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Evita despliegues solapados; deja que el último push gane.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+          cache: 'pnpm'
+
+      - name: Instalar dependencias
+        run: pnpm install --frozen-lockfile
+
+      - name: Type-check
+        run: pnpm run type-check
+
+      - name: Build
+        run: pnpm run build
+
+      # GitHub Pages solo sirve archivos estáticos: sin este truco, refrescar una
+      # ruta de React Router (ej. /westeros/tree) devuelve 404. Al copiar
+      # index.html como 404.html, GH Pages sirve la SPA igualmente y React
+      # Router resuelve la ruta en el cliente.
+      - name: Preparar fallback de SPA (404.html)
+        run: cp dist/index.html dist/404.html
+
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Subir artefacto
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Desplegar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

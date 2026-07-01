@@ -61,6 +61,7 @@ export interface FamilyMember {
   parents?: string[]      // FamilyMember ids, within the same tree
   spouses?: string[]      // FamilyMember ids, within the same tree
   inCast: boolean         // true if `id` matches an entry in CHARS (enables opening its detail view)
+  [key: string]: unknown  // satisfies React Flow's Node<T extends Record<string, unknown>> constraint
 }
 
 export interface FamilyTreeData {

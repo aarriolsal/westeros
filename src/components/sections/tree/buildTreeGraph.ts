@@ -7,6 +7,7 @@ export const NODE_HEIGHT = 60
 
 export interface TreeEdgeData {
   kind: 'parent' | 'spouse'
+  [key: string]: unknown
 }
 
 export type FamilyFlowNode = Node<FamilyMember, 'familyMember'>

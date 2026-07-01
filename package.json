@@ -8,6 +8,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "type-check": "tsc -b",
     "preview": "vite preview",
     "check:family-tree": "node scripts/check-family-tree-integrity.ts"
   },

@@ -41,6 +41,23 @@
       "problemMatcher": ["$eslint-stylish"]
     },
     {
+      "label": "lint-fix",
+      "type": "npm",
+      "script": "lint-fix",
+      "group": "test",
+      "problemMatcher": ["$eslint-stylish"]
+    },
+    {
+      "label": "type-check",
+      "type": "npm",
+      "script": "type-check",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "problemMatcher": ["$tsc"]
+    },
+    {
       "label": "preview",
       "type": "npm",
       "script": "preview",

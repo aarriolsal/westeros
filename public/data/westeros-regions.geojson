@@ -1,0 +1,55 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "id": "beyond", "name": "Más allá del Muro" },
+      "geometry": { "type": "Polygon", "coordinates": [[[-93, 19], [-77, 19], [-76, 25], [-85, 30], [-93, 24], [-93, 19]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "north", "name": "El Norte" },
+      "geometry": { "type": "Polygon", "coordinates": [[[-92, 9], [-77, 9], [-77, 19], [-92, 19], [-92, 9]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "iron", "name": "Islas del Hierro" },
+      "geometry": { "type": "Polygon", "coordinates": [[[-90, 3], [-86, 3], [-85.4, 5.5], [-87, 7.5], [-90, 6.5], [-90, 3]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "riverlands", "name": "Tierras de los Ríos" },
+      "geometry": { "type": "Polygon", "coordinates": [[[-86, 3], [-81, 3], [-81, 9], [-86, 9], [-86, 3]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "vale", "name": "El Valle" },
+      "geometry": { "type": "Polygon", "coordinates": [[[-81, 3.6], [-73, 3.6], [-73, 9], [-81, 9], [-81, 3.6]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "westerlands", "name": "Tierras del Oeste" },
+      "geometry": { "type": "Polygon", "coordinates": [[[-90, -1], [-84, -1], [-84, 3], [-90, 3], [-90, -1]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "crownlands", "name": "Las Coronas" },
+      "geometry": { "type": "Polygon", "coordinates": [[[-81, 1], [-76, 1], [-76, 3.6], [-78, 4], [-81, 3.6], [-81, 1]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "stormlands", "name": "Tierras de la Tormenta" },
+      "geometry": { "type": "Polygon", "coordinates": [[[-80, -3], [-74, -3], [-74, 1], [-80, 1], [-80, -3]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "reach", "name": "El Dominio" },
+      "geometry": { "type": "Polygon", "coordinates": [[[-90, -5], [-83, -5], [-83, -1], [-90, -1], [-90, -5]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "dorne", "name": "Dorne" },
+      "geometry": { "type": "Polygon", "coordinates": [[[-83, -8], [-74, -8], [-74, -3], [-79, -3], [-83, -5], [-83, -8]]] }
+    }
+  ]
+}

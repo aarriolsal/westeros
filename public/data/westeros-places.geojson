@@ -1,0 +1,22 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    { "type": "Feature", "properties": { "kind": "place", "id": "kl" }, "geometry": { "type": "Point", "coordinates": [-80.24, 1.97] } },
+    { "type": "Feature", "properties": { "kind": "place", "id": "wf" }, "geometry": { "type": "Point", "coordinates": [-85.14, 13.82] } },
+    { "type": "Feature", "properties": { "kind": "place", "id": "wall" }, "geometry": { "type": "Point", "coordinates": [-79.8, 19.0] } },
+    { "type": "Feature", "properties": { "kind": "place", "id": "casterly" }, "geometry": { "type": "Point", "coordinates": [-86.44, 2.78] } },
+    { "type": "Feature", "properties": { "kind": "place", "id": "dragonstone" }, "geometry": { "type": "Point", "coordinates": [-77.92, 3.52] } },
+    { "type": "Feature", "properties": { "kind": "place", "id": "highgarden" }, "geometry": { "type": "Point", "coordinates": [-84.69, -1.39] } },
+    { "type": "Feature", "properties": { "kind": "place", "id": "eyrie" }, "geometry": { "type": "Point", "coordinates": [-80.84, 6.15] } },
+    { "type": "Feature", "properties": { "kind": "place", "id": "oldtown" }, "geometry": { "type": "Point", "coordinates": [-86.18, -3.29] } },
+    { "type": "Feature", "properties": { "kind": "place", "id": "braavos" }, "geometry": { "type": "Point", "coordinates": [-66.22, 19.11] } },
+    { "type": "Feature", "properties": { "kind": "place", "id": "meereen" }, "geometry": { "type": "Point", "coordinates": [-56.52, -4.81] } },
+    { "type": "Feature", "properties": { "kind": "place", "id": "pyke" }, "geometry": { "type": "Point", "coordinates": [-86.51, 5.55] } },
+    { "type": "Feature", "properties": { "kind": "place", "id": "sunspear" }, "geometry": { "type": "Point", "coordinates": [-77.78, -4.48] } },
+
+    { "type": "Feature", "properties": { "kind": "houseSeat", "id": "baratheon" }, "geometry": { "type": "Point", "coordinates": [-77.78, 0.32] } },
+    { "type": "Feature", "properties": { "kind": "houseSeat", "id": "tully" }, "geometry": { "type": "Point", "coordinates": [-83.25, 4.44] } },
+    { "type": "Feature", "properties": { "kind": "houseSeat", "id": "tarly" }, "geometry": { "type": "Point", "coordinates": [-85.5, -2.5] } },
+    { "type": "Feature", "properties": { "kind": "houseSeat", "id": "velaryon" }, "geometry": { "type": "Point", "coordinates": [-78.3, 3.3] } }
+  ]
+}
