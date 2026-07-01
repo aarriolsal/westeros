@@ -22,4 +22,4 @@ dist-ssr
 *.sw?
 *.md
 !README.md
-*.yaml
+openspec
