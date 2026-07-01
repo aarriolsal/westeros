@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #14100b;
+  --color-bg-card: #1c1610;
+  --color-bg-raised: #241d14;
+  --color-border: #3a2f1c;
+  --color-border-hover: #c9a44c;
+  --color-gold: #c9a44c;
+  --color-gold-dim: #9a7d3e;
+  --color-text: #e8dcc1;
+  --color-text-muted: #a99873;
+  --color-text-dim: #8a7a5c;
+  --color-alive: #5aa86a;
+  --color-dead: #9b3b3b;
+  --color-future: #6f6552;
+  --font-cinzel: 'Cinzel', Georgia, serif;
+  --font-cinzel-deco: 'Cinzel Decorative', Georgia, serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/cinzel/v23/8vIJ7ww63mVu7gt79mT7.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Cinzel Decorative';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/cinzeldecorative/v16/daaHSScvJGqLYhG8nNt8KPPswUAPnh7URs.woff2') format('woff2');
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-bg); }
+::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-gold-dim); }

@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Iniciar Chrome + servidor Vite",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "dev",
+      "userDataDir": false,
+      "sourceMaps": true
+    },
+    {
+      "name": "Adjuntar a Chrome existente",
+      "type": "chrome",
+      "request": "attach",
+      "port": 9222,
+      "url": "http://localhost:5173/*",
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}

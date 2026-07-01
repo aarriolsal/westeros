@@ -1,0 +1,19 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "bradlc.vscode-tailwindcss",
+    "dsznajder.es7-react-js-snippets",
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.path-intellisense",
+    "usernamehw.errorlens",
+    "yoavbls.pretty-ts-errors",
+    "naumovs.color-highlight",
+    "editorconfig.editorconfig",
+    "eamodio.gitlens"
+  ],
+  "unwantedRecommendations": [
+    // El proyecto no usa Prettier (sin config); evita que reformatee el estilo existente.
+    "esbenp.prettier-vscode",
+    "hookyqr.beautify"
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  // Editor
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.linkedEditing": true,
+
+  // Archivos
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  // El prototipo original es solo referencia histórica: no debe editarse (ver CLAUDE.md).
+  "files.readonlyInclude": {
+    "Enciclopedia de Westeros.html": true
+  },
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "Enciclopedia de Westeros.html": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/pnpm-lock.yaml": true,
+    "Enciclopedia de Westeros.html": true
+  },
+  // Oculta del explorador lo que nunca hace falta abrir a mano
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/*.tsbuildinfo": true
+  },
+
+  // Explorador: agrupa archivos de configuración relacionados
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "package.json": "pnpm-lock.yaml, package-lock.json, yarn.lock, .npmrc, .nvmrc",
+    "vite.config.ts": "tsconfig.json, tsconfig.*.json",
+    "eslint.config.js": ".eslintignore, .prettierrc*",
+    "index.html": "Enciclopedia de Westeros.html",
+    "README.md": "CLAUDE.md, LICENSE*"
+  },
+
+  // TypeScript / JavaScript
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+
+  // ESLint (flat config, ver eslint.config.js)
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+
+  // CSS / Tailwind v4 (@theme, @import "tailwindcss" en src/index.css)
+  "css.lint.unknownAtRules": "ignore",
+  "tailwindCSS.classAttributes": ["class", "className"],
+
+  // React / JSX
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+
+  // Gestor de paquetes del proyecto
+  "npm.packageManager": "pnpm",
+
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
+}
