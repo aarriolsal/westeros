@@ -1,0 +1,46 @@
+{
+  "hero": {
+    "subtitle": "Encyclopedia",
+    "tagline": "A Song of Ice and Fire · Westeros and Essos",
+    "ctaEncyclopedia": "Explore the encyclopedia",
+    "ctaMap": "See the map"
+  },
+  "stats": {
+    "houses": "Great Houses",
+    "characters": "Characters",
+    "sagas": "Sagas",
+    "years": "Years of history"
+  },
+  "progressBanner": {
+    "label": "Saga point:"
+  },
+  "sectionsAriaLabel": "Sections of the encyclopedia",
+  "explore": "Explore",
+  "cards": {
+    "encyclopedia": {
+      "title": "Encyclopedia",
+      "desc": "Characters, houses and places from the three sagas.",
+      "ariaLabel": "Go to the Encyclopedia"
+    },
+    "genealogy": {
+      "title": "Genealogy",
+      "desc": "Family trees of the great houses.",
+      "ariaLabel": "Go to Genealogy"
+    },
+    "map": {
+      "title": "Map",
+      "desc": "The regions of Westeros, interactive.",
+      "ariaLabel": "Go to Map"
+    },
+    "timeline": {
+      "title": "Chronology",
+      "desc": "Eight thousand years of history.",
+      "ariaLabel": "Go to Chronology"
+    },
+    "curios": {
+      "title": "Curiosities",
+      "desc": "Secrets, myths and hidden data.",
+      "ariaLabel": "Go to Curiosities"
+    }
+  }
+}

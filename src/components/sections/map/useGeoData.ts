@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { REGIONS_GEOJSON_URL, PLACES_GEOJSON_URL } from './mapConfig'
+import { REGIONS_GEOJSON_URL, PLACES_GEOJSON_URL } from '@/config/map'
 
 export function useGeoData() {
   const [regions, setRegions] = useState<GeoJSON.FeatureCollection | null>(null)

@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "subtitle": "Enciclopedia",
+    "tagline": "Canción de Hielo y Fuego · Poniente y Essos",
+    "ctaEncyclopedia": "Explorar la enciclopedia",
+    "ctaMap": "Ver el mapa"
+  },
+  "stats": {
+    "houses": "Grandes Casas",
+    "characters": "Personajes",
+    "sagas": "Sagas",
+    "years": "Años de historia"
+  },
+  "progressBanner": {
+    "label": "Punto de la saga:"
+  },
+  "sectionsAriaLabel": "Secciones de la enciclopedia",
+  "explore": "Explorar",
+  "cards": {
+    "encyclopedia": { "title": "Enciclopedia", "desc": "Personajes, casas y lugares de las tres sagas.", "ariaLabel": "Ir a la Enciclopedia" },
+    "genealogy": { "title": "Genealogía", "desc": "Árboles genealógicos de las grandes casas.", "ariaLabel": "Ir a Genealogía" },
+    "map": { "title": "Mapa", "desc": "Las regiones de Poniente, interactivas.", "ariaLabel": "Ir al Mapa" },
+    "timeline": { "title": "Cronología", "desc": "Ocho mil años de historia.", "ariaLabel": "Ir a la Cronología" },
+    "curios": { "title": "Curiosidades", "desc": "Secretos, mitos y datos ocultos.", "ariaLabel": "Ir a Curiosidades" }
+  }
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "s_hotd1",
+    "saga": "hotd",
+    "rank": 12
+  },
+  {
+    "id": "s_hotd2",
+    "saga": "hotd",
+    "rank": 14
+  },
+  {
+    "id": "s_knight",
+    "saga": "dunk",
+    "rank": 30
+  },
+  {
+    "id": "s_got1",
+    "saga": "got",
+    "rank": 52
+  },
+  {
+    "id": "s_got2",
+    "saga": "got",
+    "rank": 54
+  },
+  {
+    "id": "s_got3",
+    "saga": "got",
+    "rank": 58
+  },
+  {
+    "id": "s_got4",
+    "saga": "got",
+    "rank": 59
+  },
+  {
+    "id": "s_got5",
+    "saga": "got",
+    "rank": 61
+  },
+  {
+    "id": "s_got6",
+    "saga": "got",
+    "rank": 64
+  },
+  {
+    "id": "s_got7",
+    "saga": "got",
+    "rank": 67
+  },
+  {
+    "id": "s_got8",
+    "saga": "got",
+    "rank": 70
+  }
+]

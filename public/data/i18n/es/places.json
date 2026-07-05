@@ -1,0 +1,62 @@
+{
+  "kl": {
+    "name": "Desembarco del Rey",
+    "kind": "Capital",
+    "desc": "Sede del Trono de Hierro y la Fortaleza Roja. La mayor y más sucia ciudad de Poniente, fundada por Aegon el Conquistador."
+  },
+  "wf": {
+    "name": "Invernalia",
+    "kind": "Castillo",
+    "desc": "El milenario hogar de los Stark, calentado por aguas termales bajo sus muros. Corazón del Norte durante ocho mil años."
+  },
+  "wall": {
+    "name": "El Muro",
+    "kind": "Fortificación",
+    "desc": "Barrera de hielo de 300 metros y 480 km que protege el reino de lo que acecha al norte. Custodiada por la Guardia de la Noche."
+  },
+  "casterly": {
+    "name": "Roca Casterly",
+    "kind": "Castillo",
+    "desc": "Fortaleza esculpida en una montaña sobre minas de oro. Asiento de los Lannister, jamás tomada por asalto."
+  },
+  "dragonstone": {
+    "name": "Rocadragón",
+    "kind": "Castillo",
+    "desc": "Isla volcánica con fortaleza de piedra labrada como dragones. Primer bastión Targaryen en Poniente y cuna de Daenerys."
+  },
+  "highgarden": {
+    "name": "Altojardín",
+    "kind": "Castillo",
+    "desc": "Bello asiento de los Tyrell entre jardines y viñedos, en las tierras más fértiles del continente."
+  },
+  "eyrie": {
+    "name": "Nido de Águilas",
+    "kind": "Castillo",
+    "desc": "Fortaleza encaramada en la cima de una montaña, accesible solo por un sendero traicionero y sus \"celdas del cielo\"."
+  },
+  "oldtown": {
+    "name": "Antigua",
+    "kind": "Ciudad",
+    "desc": "La ciudad más antigua, sede de la Ciudadela donde se forman los maestres, y de la Torre Alta de los Hightower."
+  },
+  "braavos": {
+    "name": "Braavos",
+    "kind": "Ciudad Libre",
+    "desc": "Ciudad de canales y banqueros, hogar del Banco de Hierro y del Templo de Muchos Rostros. Fundada por esclavos fugitivos."
+  },
+  "meereen": {
+    "name": "Meereen",
+    "kind": "Ciudad",
+    "desc": "La mayor de las ciudades esclavistas de la bahía, donde Daenerys intentó forjar un gobierno justo antes de marchar a Poniente."
+  },
+  "pyke": {
+    "name": "Pyke",
+    "kind": "Castillo",
+    "desc": "Asiento ruinoso de los Greyjoy, repartido entre columnas de roca azotadas por el mar."
+  },
+  "sunspear": {
+    "name": "Lanza del Sol",
+    "kind": "Castillo",
+    "desc": "Sede de los Martell en el desierto soleado de Dorne, junto a los Jardines del Agua de Lanza del Sol."
+  }
+}

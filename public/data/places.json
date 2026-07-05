@@ -1,0 +1,50 @@
+[
+  {
+    "id": "kl",
+    "regionId": "crownlands"
+  },
+  {
+    "id": "wf",
+    "regionId": "north"
+  },
+  {
+    "id": "wall",
+    "regionId": "north"
+  },
+  {
+    "id": "casterly",
+    "regionId": "westerlands"
+  },
+  {
+    "id": "dragonstone",
+    "regionId": "crownlands"
+  },
+  {
+    "id": "highgarden",
+    "regionId": "reach"
+  },
+  {
+    "id": "eyrie",
+    "regionId": "vale"
+  },
+  {
+    "id": "oldtown",
+    "regionId": "reach"
+  },
+  {
+    "id": "braavos",
+    "regionId": "essos"
+  },
+  {
+    "id": "meereen",
+    "regionId": "essos"
+  },
+  {
+    "id": "pyke",
+    "regionId": "iron"
+  },
+  {
+    "id": "sunspear",
+    "regionId": "dorne"
+  }
+]

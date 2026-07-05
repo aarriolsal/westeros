@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion'
-import HouseInitial from '../../common/HouseInitial'
-import StatusBadge from '../../common/StatusBadge'
-import SagaTag from '../../common/SagaTag'
-import type { EncItem } from '../../../hooks/useEncyclopedia'
+import HouseInitial from '@/components/common/HouseInitial'
+import StatusBadge from '@/components/common/StatusBadge'
+import SagaTag from '@/components/common/SagaTag'
+import type { EncItem } from '@/hooks/useEncyclopedia'
 
 interface EncItemCardProps {
   item: EncItem

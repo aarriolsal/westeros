@@ -1,0 +1,227 @@
+{
+  "targaryen": {
+    "label": "Casa Targaryen",
+    "note": "La línea real desde la Conquista hasta el final de la dinastía, pasando por la Danza de los Dragones.",
+    "members": {
+      "aegon1": {
+        "name": "Aegon I \"el Conquistador\""
+      },
+      "rhaenys_i": {
+        "name": "Rhaenys (hermana-esposa de Aegon I)"
+      },
+      "visenya": {
+        "name": "Visenya (hermana-esposa de Aegon I)"
+      },
+      "viserys1": {
+        "name": "Viserys I"
+      },
+      "alicent": {
+        "name": "Alicent Hightower (reina)"
+      },
+      "rhaenyra": {
+        "name": "Rhaenyra (heredera)"
+      },
+      "daemon": {
+        "name": "Daemon (esposo y tío)"
+      },
+      "aegon2": {
+        "name": "Aegon II"
+      },
+      "aemond": {
+        "name": "Aemond"
+      },
+      "helaena": {
+        "name": "Helaena"
+      },
+      "egg": {
+        "name": "Aegon V \"Egg\""
+      },
+      "aerys2": {
+        "name": "Aerys II \"el Rey Loco\""
+      },
+      "rhaella": {
+        "name": "Rhaella"
+      },
+      "rhaegar": {
+        "name": "Rhaegar"
+      },
+      "viserysT": {
+        "name": "Viserys"
+      },
+      "dany": {
+        "name": "Daenerys"
+      },
+      "jon": {
+        "name": "Jon Nieve (Aegon, hijo de Rhaegar y Lyanna)"
+      }
+    }
+  },
+  "stark": {
+    "label": "Casa Stark",
+    "note": "Los lobos de Invernalia durante la Guerra de los Cinco Reyes.",
+    "members": {
+      "rickard": {
+        "name": "Rickard Stark"
+      },
+      "lyarra": {
+        "name": "Lyarra"
+      },
+      "ned": {
+        "name": "Eddard \"Ned\""
+      },
+      "brandon": {
+        "name": "Brandon"
+      },
+      "lyanna": {
+        "name": "Lyanna"
+      },
+      "benjen": {
+        "name": "Benjen"
+      },
+      "cat": {
+        "name": "Catelyn Tully (esposa)"
+      },
+      "robb": {
+        "name": "Robb"
+      },
+      "sansa": {
+        "name": "Sansa"
+      },
+      "arya": {
+        "name": "Arya"
+      },
+      "bran": {
+        "name": "Bran"
+      },
+      "rickon": {
+        "name": "Rickon"
+      },
+      "jon": {
+        "name": "Jon Nieve (criado como bastardo)"
+      }
+    }
+  },
+  "lannister": {
+    "label": "Casa Lannister",
+    "note": "Los leones del Oeste, los más ricos de Poniente.",
+    "members": {
+      "tywin": {
+        "name": "Tywin Lannister"
+      },
+      "joanna": {
+        "name": "Joanna (esposa)"
+      },
+      "cersei": {
+        "name": "Cersei"
+      },
+      "jaime": {
+        "name": "Jaime"
+      },
+      "tyrion": {
+        "name": "Tyrion"
+      },
+      "joffrey": {
+        "name": "Joffrey"
+      },
+      "myrcella": {
+        "name": "Myrcella"
+      },
+      "tommen": {
+        "name": "Tommen"
+      }
+    }
+  },
+  "baratheon": {
+    "label": "Casa Baratheon",
+    "note": "Los venados de la Tormenta, casa real tras la Rebelión.",
+    "members": {
+      "robert": {
+        "name": "Robert (rey)"
+      },
+      "stannis": {
+        "name": "Stannis"
+      },
+      "renly": {
+        "name": "Renly"
+      },
+      "cersei": {
+        "name": "Cersei Lannister (reina)"
+      },
+      "selyse": {
+        "name": "Selyse"
+      },
+      "gendry": {
+        "name": "Gendry (legitimado como Baratheon)"
+      },
+      "shireen": {
+        "name": "Shireen (hija de Stannis)"
+      }
+    }
+  },
+  "tully": {
+    "label": "Casa Tully",
+    "note": "Los señores de los Ríos, unidos a Stark y Arryn por matrimonio.",
+    "members": {
+      "hoster": {
+        "name": "Hoster Tully"
+      },
+      "cat": {
+        "name": "Catelyn (→ Stark)"
+      },
+      "lysa": {
+        "name": "Lysa (→ Arryn)"
+      },
+      "edmure": {
+        "name": "Edmure"
+      },
+      "brynden": {
+        "name": "Brynden \"Pez Negro\""
+      }
+    }
+  },
+  "martell": {
+    "label": "Casa Martell",
+    "note": "Los príncipes de Dorne, nunca conquistados.",
+    "members": {
+      "doran": {
+        "name": "Doran Martell"
+      },
+      "oberyn": {
+        "name": "Oberyn \"la Víbora Roja\""
+      },
+      "elia": {
+        "name": "Elia (→ Rhaegar)"
+      },
+      "trystane": {
+        "name": "Trystane"
+      },
+      "arianne": {
+        "name": "Arianne"
+      }
+    }
+  },
+  "greyjoy": {
+    "label": "Casa Greyjoy",
+    "note": "Los krakens de las Islas del Hierro.",
+    "members": {
+      "balon": {
+        "name": "Balon Greyjoy"
+      },
+      "euron": {
+        "name": "Euron"
+      },
+      "victarion": {
+        "name": "Victarion"
+      },
+      "aeron": {
+        "name": "Aeron"
+      },
+      "theon": {
+        "name": "Theon"
+      },
+      "yara": {
+        "name": "Yara/Asha"
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "kicker": "Chronology",
+  "title": "Through the Ages",
+  "filters": {
+    "all": "All",
+    "got": "Game of Thrones",
+    "hotd": "House of the Dragon",
+    "dunk": "The Knight",
+    "lore": "Ancient history"
+  },
+  "spoilerHint": "Spoiler — advance your point of the saga",
+  "noEvents": "There are no events for this filter."
+}

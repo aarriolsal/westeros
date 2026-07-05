@@ -1,0 +1,38 @@
+[
+  {
+    "id": "pact-and-wall",
+    "saga": "lore"
+  },
+  {
+    "id": "aegon-conquest",
+    "saga": "lore"
+  },
+  {
+    "id": "great-council-succession",
+    "saga": "hotd"
+  },
+  {
+    "id": "dance-of-dragons",
+    "saga": "hotd"
+  },
+  {
+    "id": "dunk-and-egg",
+    "saga": "dunk"
+  },
+  {
+    "id": "roberts-rebellion",
+    "saga": "got"
+  },
+  {
+    "id": "hand-dies",
+    "saga": "got"
+  },
+  {
+    "id": "red-wedding-and-dragons",
+    "saga": "got"
+  },
+  {
+    "id": "long-night-and-final-battle",
+    "saga": "got"
+  }
+]

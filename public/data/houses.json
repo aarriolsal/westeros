@@ -1,0 +1,98 @@
+[
+  {
+    "id": "targaryen",
+    "c1": "#0b0b0b",
+    "c2": "#b5121b",
+    "accent": "#c9a44c",
+    "initial": "T",
+    "regionId": "crownlands"
+  },
+  {
+    "id": "stark",
+    "c1": "#2f363c",
+    "c2": "#c8d0d6",
+    "accent": "#9aa7b0",
+    "initial": "S",
+    "regionId": "north"
+  },
+  {
+    "id": "lannister",
+    "c1": "#7d1226",
+    "c2": "#d4af37",
+    "accent": "#d4af37",
+    "initial": "L",
+    "regionId": "westerlands"
+  },
+  {
+    "id": "baratheon",
+    "c1": "#161616",
+    "c2": "#e0b021",
+    "accent": "#e0b021",
+    "initial": "B",
+    "regionId": "stormlands"
+  },
+  {
+    "id": "tyrell",
+    "c1": "#1f5a32",
+    "c2": "#7ec96a",
+    "accent": "#4fae5a",
+    "initial": "T",
+    "regionId": "reach"
+  },
+  {
+    "id": "martell",
+    "c1": "#c2511c",
+    "c2": "#b51226",
+    "accent": "#e0681f",
+    "initial": "M",
+    "regionId": "dorne"
+  },
+  {
+    "id": "tully",
+    "c1": "#244e85",
+    "c2": "#9b1b30",
+    "accent": "#3a6fb0",
+    "initial": "T",
+    "regionId": "riverlands"
+  },
+  {
+    "id": "arryn",
+    "c1": "#1f5fa0",
+    "c2": "#eef3f8",
+    "accent": "#5b9bd6",
+    "initial": "A",
+    "regionId": "vale"
+  },
+  {
+    "id": "greyjoy",
+    "c1": "#14181c",
+    "c2": "#c9a23a",
+    "accent": "#c9a23a",
+    "initial": "G",
+    "regionId": "iron"
+  },
+  {
+    "id": "tarly",
+    "c1": "#3a2410",
+    "c2": "#c0392b",
+    "accent": "#a3582a",
+    "initial": "T",
+    "regionId": "reach"
+  },
+  {
+    "id": "hightower",
+    "c1": "#3a3f46",
+    "c2": "#dfe5ea",
+    "accent": "#9fb0bd",
+    "initial": "H",
+    "regionId": "reach"
+  },
+  {
+    "id": "velaryon",
+    "c1": "#0f5e5e",
+    "c2": "#cdd6db",
+    "accent": "#2b9b9b",
+    "initial": "V",
+    "regionId": "crownlands"
+  }
+]

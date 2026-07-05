@@ -1,55 +1,27 @@
 import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { useAppStore } from '../store/useAppStore'
-import { useProgress } from '../hooks/useProgress'
-import type { Section } from '../types/index.ts'
+import { useTranslation } from 'react-i18next'
+import { useAppStore } from '@/store/useAppStore'
+import { useProgress } from '@/hooks/useProgress'
+import { translationNameSpace } from '@/config/lang'
+import type { Section } from '@/types/index.ts'
 
 // ─── Feature card data ────────────────────────────────────────────────────────
+// title/desc/ariaLabel come from home.json's "cards.<section>" — `section`
+// doubles as the translation key, since it already matches ('encyclopedia',
+// 'genealogy', 'map', 'timeline', 'curios').
 
 interface FeatureCard {
   icon: string
-  title: string
-  desc: string
   section: Section
-  ariaLabel: string
 }
 
 const FEATURE_CARDS: FeatureCard[] = [
-  {
-    icon: '📜',
-    title: 'Enciclopedia',
-    desc: 'Personajes, casas y lugares de las tres sagas.',
-    section: 'encyclopedia',
-    ariaLabel: 'Ir a la Enciclopedia',
-  },
-  {
-    icon: '🌳',
-    title: 'Genealogía',
-    desc: 'Árboles genealógicos de las grandes casas.',
-    section: 'tree',
-    ariaLabel: 'Ir a Genealogía',
-  },
-  {
-    icon: '🗺️',
-    title: 'Mapa',
-    desc: 'Las regiones de Poniente, interactivas.',
-    section: 'map',
-    ariaLabel: 'Ir al Mapa',
-  },
-  {
-    icon: '🕰️',
-    title: 'Cronología',
-    desc: 'Ocho mil años de historia.',
-    section: 'timeline',
-    ariaLabel: 'Ir a la Cronología',
-  },
-  {
-    icon: '✨',
-    title: 'Curiosidades',
-    desc: 'Secretos, mitos y datos ocultos.',
-    section: 'curios',
-    ariaLabel: 'Ir a Curiosidades',
-  },
+  { icon: '📜', section: 'encyclopedia' },
+  { icon: '🌳', section: 'genealogy' },
+  { icon: '🗺️', section: 'map' },
+  { icon: '🕰️', section: 'timeline' },
+  { icon: '✨', section: 'curios' },
 ]
 
 // ─── Hexagon sigil SVG ────────────────────────────────────────────────────────
@@ -107,11 +79,12 @@ function HexSigil() {
 // ─── Stats ────────────────────────────────────────────────────────────────────
 
 function StatsRow() {
+  const { t } = useTranslation(translationNameSpace.home)
   const stats = [
-    { value: '12+', label: 'Grandes Casas' },
-    { value: '38+', label: 'Personajes' },
-    { value: '3', label: 'Sagas' },
-    { value: '8000+', label: 'Años de historia' },
+    { value: '12+', label: t('stats.houses', 'Grandes Casas') },
+    { value: '38+', label: t('stats.characters', 'Personajes') },
+    { value: '3', label: t('stats.sagas', 'Sagas') },
+    { value: '8000+', label: t('stats.years', 'Años de historia') },
   ]
 
   return (
@@ -167,6 +140,7 @@ function StatsRow() {
 // ─── Progress Banner ──────────────────────────────────────────────────────────
 
 function ProgressBanner() {
+  const { t } = useTranslation(translationNameSpace.home)
   const { curPoint, SAGA_META } = useProgress()
 
   if (curPoint.id === 'all') return null
@@ -206,7 +180,7 @@ function ProgressBanner() {
           letterSpacing: '0.1em',
         }}
       >
-        Punto de la saga:
+        {t('progressBanner.label', 'Punto de la saga:')}
       </span>
       <span
         style={{
@@ -224,10 +198,11 @@ function ProgressBanner() {
 // ─── Feature card ─────────────────────────────────────────────────────────────
 
 function Card({ card, onClick }: { card: FeatureCard; onClick: () => void }) {
+  const { t } = useTranslation(translationNameSpace.home)
   return (
     <button
       type="button"
-      aria-label={card.ariaLabel}
+      aria-label={t(`cards.${card.section}.ariaLabel`)}
       onClick={onClick}
       style={{
         background: 'var(--color-bg-card)',
@@ -275,7 +250,7 @@ function Card({ card, onClick }: { card: FeatureCard; onClick: () => void }) {
           letterSpacing: '0.04em',
         }}
       >
-        {card.title}
+        {t(`cards.${card.section}.title`)}
       </span>
       <span
         style={{
@@ -284,7 +259,7 @@ function Card({ card, onClick }: { card: FeatureCard; onClick: () => void }) {
           lineHeight: 1.5,
         }}
       >
-        {card.desc}
+        {t(`cards.${card.section}.desc`)}
       </span>
     </button>
   )
@@ -293,6 +268,7 @@ function Card({ card, onClick }: { card: FeatureCard; onClick: () => void }) {
 // ─── Main component ───────────────────────────────────────────────────────────
 
 export function HomePage() {
+  const { t } = useTranslation(translationNameSpace.home)
   const navigate = useNavigate()
   const { navigate: storeNavigate } = useAppStore()
 
@@ -352,7 +328,7 @@ export function HomePage() {
             margin: '0 0 28px',
           }}
         >
-          ENCICLOPEDIA
+          {t('hero.subtitle', 'Enciclopedia')}
         </p>
 
         {/* Divider */}
@@ -377,7 +353,7 @@ export function HomePage() {
             fontStyle: 'italic',
           }}
         >
-          Canción de Hielo y Fuego &middot; Poniente y Essos
+          {t('hero.tagline', 'Canción de Hielo y Fuego · Poniente y Essos')}
         </p>
 
         {/* CTAs */}
@@ -421,7 +397,7 @@ export function HomePage() {
               ;(e.currentTarget as HTMLButtonElement).style.outline = 'none'
             }}
           >
-            Explorar la enciclopedia
+            {t('hero.ctaEncyclopedia', 'Explorar la enciclopedia')}
           </button>
 
           <button
@@ -461,7 +437,7 @@ export function HomePage() {
               ;(e.currentTarget as HTMLButtonElement).style.outline = 'none'
             }}
           >
-            Ver el mapa
+            {t('hero.ctaMap', 'Ver el mapa')}
           </button>
         </div>
 
@@ -474,7 +450,7 @@ export function HomePage() {
 
       {/* ── Feature cards ─────────────────────────────────────────────────── */}
       <section
-        aria-label="Secciones de la enciclopedia"
+        aria-label={t('sectionsAriaLabel', 'Secciones de la enciclopedia')}
         style={{
           maxWidth: '960px',
           margin: '0 auto',
@@ -510,7 +486,7 @@ export function HomePage() {
               whiteSpace: 'nowrap',
             }}
           >
-            Explorar
+            {t('explore', 'Explorar')}
           </h2>
           <div
             style={{

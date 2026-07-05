@@ -1,12 +1,16 @@
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { CURIOS } from '../data/lore'
-import { useProgress } from '../hooks/useProgress'
-import { useAppStore } from '../store/useAppStore'
+import { useTranslation } from 'react-i18next'
+import { useDataStore } from '@/store/useDataStore'
+import { useProgress } from '@/hooks/useProgress'
+import { useAppStore } from '@/store/useAppStore'
+import { translationNameSpace } from '@/config/lang'
 
 export default function CuriosPage() {
+  const { t } = useTranslation(translationNameSpace.curios)
   const { curioOpen, toggleCurioOpen } = useAppStore()
   const { isCurioLocked } = useProgress()
+  const { curios: CURIOS } = useDataStore()
   const [catFilter, setCatFilter] = useState<string | null>(null)
 
   const allCats = Array.from(new Set(CURIOS.map(c => c.cat)))
@@ -27,7 +31,7 @@ export default function CuriosPage() {
           color: 'var(--color-gold-dim)',
           marginBottom: '0.4rem',
         }}>
-          Curiosidades
+          {t('kicker', 'Curiosidades')}
         </p>
         <h1 style={{
           fontFamily: 'Cinzel, serif',
@@ -37,7 +41,7 @@ export default function CuriosPage() {
           margin: 0,
           lineHeight: 1.15,
         }}>
-          Secretos del Reino
+          {t('title', 'Secretos del Reino')}
         </h1>
       </div>
 
@@ -52,7 +56,7 @@ export default function CuriosPage() {
           onClick={() => setCatFilter(null)}
           style={chipStyle(catFilter === null)}
         >
-          Todas
+          {t('allCategories', 'Todas')}
         </button>
         {allCats.map(cat => (
           <button
@@ -168,7 +172,7 @@ export default function CuriosPage() {
                           gap: '0.4rem',
                         }}>
                           <span>🔒</span>
-                          <span>Spoiler — avanza tu punto de la saga para desbloquear esta curiosidad.</span>
+                          <span>{t('spoilerHint', 'Spoiler — avanza tu punto de la saga para desbloquear esta curiosidad.')}</span>
                         </p>
                       ) : (
                         <p style={{
@@ -196,7 +200,7 @@ export default function CuriosPage() {
           marginTop: '3rem',
           fontSize: '0.9rem',
         }}>
-          No hay curiosidades para esta categoría.
+          {t('noResults', 'No hay curiosidades para esta categoría.')}
         </p>
       )}
     </section>

@@ -1,0 +1,65 @@
+{
+  "brand": {
+    "ariaHome": "Ir al inicio",
+    "subtitle": "Enciclopedia"
+  },
+  "nav": {
+    "home": "Inicio",
+    "encyclopedia": "Enciclopedia",
+    "timeline": "Cronología",
+    "genealogy": "Genealogía",
+    "map": "Mapa",
+    "curios": "Curiosidades"
+  },
+  "lang": {
+    "ariaSelect": "Seleccionar idioma"
+  },
+  "progress": {
+    "configureTitle": "Configurar punto de progreso",
+    "ariaSelector": "Selector de punto de la saga",
+    "title": "Punto de la saga",
+    "subtitle": "¿Hasta dónde has visto/leído?",
+    "modeSerie": "Serie de TV",
+    "modeLibros": "Libros",
+    "stateFuture": "Aún no aparece",
+    "stateDead": "Muerto",
+    "stateAlive": "Vivo",
+    "throne": {
+      "houseTargaryen": "Casa Targaryen",
+      "houseBaratheon": "Casa Baratheon",
+      "houseLannister": "Casa Lannister",
+      "sixKingdoms": "Los Seis Reinos",
+      "viserysI": "Viserys I",
+      "aegonVsRhaenyra": "Aegon II vs. Rhaenyra (en guerra)",
+      "targaryenDynasty": "Dinastía Targaryen",
+      "robertI": "Robert I",
+      "joffreyI": "Joffrey I",
+      "tommenI": "Tommen I",
+      "cerseiI": "Cersei I",
+      "brandonTheBroken": "Brandon el Roto"
+    }
+  },
+  "loading": "Cargando la enciclopedia…",
+  "errorLoadingData": "No se pudieron cargar los datos de la enciclopedia.",
+  "detail": {
+    "ariaDetails": "Detalles de {{name}}",
+    "close": "Cerrar",
+    "notAppearedYet": "Aún no aparece en la saga",
+    "futureCharacter": "Este personaje aún no ha aparecido según tu punto de progreso actual.",
+    "house": "Casa",
+    "motto": "Lema",
+    "seat": "Sede",
+    "region": "Región",
+    "emblem": "Emblema",
+    "status": "Estado",
+    "culture": "Cultura",
+    "origin": "Origen",
+    "biography": "Biografía",
+    "appearsIn": "Aparece en",
+    "data": "Datos",
+    "history": "Historia",
+    "membersCount": "Miembros ({{count}})",
+    "type": "Tipo",
+    "description": "Descripción"
+  }
+}

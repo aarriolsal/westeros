@@ -1,0 +1,575 @@
+{
+  "targaryen": {
+    "members": [
+      {
+        "id": "aegon1",
+        "house": "targaryen",
+        "generation": 0,
+        "spouses": [
+          "rhaenys_i",
+          "visenya"
+        ],
+        "inCast": false
+      },
+      {
+        "id": "rhaenys_i",
+        "house": "targaryen",
+        "generation": 0,
+        "spouses": [
+          "aegon1"
+        ],
+        "inCast": false
+      },
+      {
+        "id": "visenya",
+        "house": "targaryen",
+        "generation": 0,
+        "spouses": [
+          "aegon1"
+        ],
+        "inCast": false
+      },
+      {
+        "id": "viserys1",
+        "house": "targaryen",
+        "generation": 1,
+        "spouses": [
+          "alicent"
+        ],
+        "inCast": true
+      },
+      {
+        "id": "alicent",
+        "house": "hightower",
+        "generation": 1,
+        "spouses": [
+          "viserys1"
+        ],
+        "inCast": true
+      },
+      {
+        "id": "rhaenyra",
+        "house": "targaryen",
+        "generation": 1,
+        "parents": [
+          "viserys1"
+        ],
+        "spouses": [
+          "daemon"
+        ],
+        "inCast": true
+      },
+      {
+        "id": "daemon",
+        "house": "targaryen",
+        "generation": 1,
+        "spouses": [
+          "rhaenyra"
+        ],
+        "inCast": true
+      },
+      {
+        "id": "aegon2",
+        "house": "targaryen",
+        "generation": 1,
+        "parents": [
+          "viserys1",
+          "alicent"
+        ],
+        "inCast": true
+      },
+      {
+        "id": "aemond",
+        "house": "targaryen",
+        "generation": 1,
+        "parents": [
+          "viserys1",
+          "alicent"
+        ],
+        "inCast": true
+      },
+      {
+        "id": "helaena",
+        "house": "targaryen",
+        "generation": 1,
+        "parents": [
+          "viserys1",
+          "alicent"
+        ],
+        "inCast": false
+      },
+      {
+        "id": "egg",
+        "house": "targaryen",
+        "generation": 2,
+        "inCast": true
+      },
+      {
+        "id": "aerys2",
+        "house": "targaryen",
+        "generation": 3,
+        "spouses": [
+          "rhaella"
+        ],
+        "inCast": false
+      },
+      {
+        "id": "rhaella",
+        "house": "targaryen",
+        "generation": 3,
+        "spouses": [
+          "aerys2"
+        ],
+        "inCast": false
+      },
+      {
+        "id": "rhaegar",
+        "house": "targaryen",
+        "generation": 4,
+        "parents": [
+          "aerys2",
+          "rhaella"
+        ],
+        "inCast": true
+      },
+      {
+        "id": "viserysT",
+        "house": "targaryen",
+        "generation": 4,
+        "parents": [
+          "aerys2",
+          "rhaella"
+        ],
+        "inCast": true
+      },
+      {
+        "id": "dany",
+        "house": "targaryen",
+        "generation": 4,
+        "parents": [
+          "aerys2",
+          "rhaella"
+        ],
+        "inCast": true
+      },
+      {
+        "id": "jon",
+        "house": "targaryen",
+        "generation": 5,
+        "parents": [
+          "rhaegar"
+        ],
+        "inCast": true
+      }
+    ]
+  },
+  "stark": {
+    "members": [
+      {
+        "id": "rickard",
+        "house": "stark",
+        "generation": 0,
+        "spouses": [
+          "lyarra"
+        ],
+        "inCast": false
+      },
+      {
+        "id": "lyarra",
+        "house": "",
+        "generation": 0,
+        "spouses": [
+          "rickard"
+        ],
+        "inCast": false
+      },
+      {
+        "id": "ned",
+        "house": "stark",
+        "generation": 1,
+        "parents": [
+          "rickard",
+          "lyarra"
+        ],
+        "spouses": [
+          "cat"
+        ],
+        "inCast": true
+      },
+      {
+        "id": "brandon",
+        "house": "stark",
+        "generation": 1,
+        "parents": [
+          "rickard",
+          "lyarra"
+        ],
+        "inCast": false
+      },
+      {
+        "id": "lyanna",
+        "house": "stark",
+        "generation": 1,
+        "parents": [
+          "rickard",
+          "lyarra"
+        ],
+        "inCast": false
+      },
+      {
+        "id": "benjen",
+        "house": "stark",
+        "generation": 1,
+        "parents": [
+          "rickard",
+          "lyarra"
+        ],
+        "inCast": false
+      },
+      {
+        "id": "cat",
+        "house": "tully",
+        "generation": 1,
+        "spouses": [
+          "ned"
+        ],
+        "inCast": true
+      },
+      {
+        "id": "robb",
+        "house": "stark",
+        "generation": 2,
+        "parents": [
+          "ned",
+          "cat"
+        ],
+        "inCast": true
+      },
+      {
+        "id": "sansa",
+        "house": "stark",
+        "generation": 2,
+        "parents": [
+          "ned",
+          "cat"
+        ],
+        "inCast": true
+      },
+      {
+        "id": "arya",
+        "house": "stark",
+        "generation": 2,
+        "parents": [
+          "ned",
+          "cat"
+        ],
+        "inCast": true
+      },
+      {
+        "id": "bran",
+        "house": "stark",
+        "generation": 2,
+        "parents": [
+          "ned",
+          "cat"
+        ],
+        "inCast": true
+      },
+      {
+        "id": "rickon",
+        "house": "stark",
+        "generation": 2,
+        "parents": [
+          "ned",
+          "cat"
+        ],
+        "inCast": false
+      },
+      {
+        "id": "jon",
+        "house": "stark",
+        "generation": 2,
+        "parents": [
+          "lyanna"
+        ],
+        "inCast": true
+      }
+    ]
+  },
+  "lannister": {
+    "members": [
+      {
+        "id": "tywin",
+        "house": "lannister",
+        "generation": 0,
+        "spouses": [
+          "joanna"
+        ],
+        "inCast": true
+      },
+      {
+        "id": "joanna",
+        "house": "lannister",
+        "generation": 0,
+        "spouses": [
+          "tywin"
+        ],
+        "inCast": false
+      },
+      {
+        "id": "cersei",
+        "house": "lannister",
+        "generation": 1,
+        "parents": [
+          "tywin",
+          "joanna"
+        ],
+        "inCast": true
+      },
+      {
+        "id": "jaime",
+        "house": "lannister",
+        "generation": 1,
+        "parents": [
+          "tywin",
+          "joanna"
+        ],
+        "inCast": true
+      },
+      {
+        "id": "tyrion",
+        "house": "lannister",
+        "generation": 1,
+        "parents": [
+          "tywin",
+          "joanna"
+        ],
+        "inCast": true
+      },
+      {
+        "id": "joffrey",
+        "house": "lannister",
+        "generation": 2,
+        "parents": [
+          "cersei",
+          "jaime"
+        ],
+        "inCast": true
+      },
+      {
+        "id": "myrcella",
+        "house": "lannister",
+        "generation": 2,
+        "parents": [
+          "cersei",
+          "jaime"
+        ],
+        "inCast": false
+      },
+      {
+        "id": "tommen",
+        "house": "lannister",
+        "generation": 2,
+        "parents": [
+          "cersei",
+          "jaime"
+        ],
+        "inCast": false
+      }
+    ]
+  },
+  "baratheon": {
+    "members": [
+      {
+        "id": "robert",
+        "house": "baratheon",
+        "generation": 0,
+        "spouses": [
+          "cersei"
+        ],
+        "inCast": true
+      },
+      {
+        "id": "stannis",
+        "house": "baratheon",
+        "generation": 0,
+        "spouses": [
+          "selyse"
+        ],
+        "inCast": true
+      },
+      {
+        "id": "renly",
+        "house": "baratheon",
+        "generation": 0,
+        "inCast": false
+      },
+      {
+        "id": "cersei",
+        "house": "lannister",
+        "generation": 1,
+        "spouses": [
+          "robert"
+        ],
+        "inCast": true
+      },
+      {
+        "id": "selyse",
+        "house": "",
+        "generation": 1,
+        "spouses": [
+          "stannis"
+        ],
+        "inCast": false
+      },
+      {
+        "id": "gendry",
+        "house": "baratheon",
+        "generation": 1,
+        "parents": [
+          "robert"
+        ],
+        "inCast": false
+      },
+      {
+        "id": "shireen",
+        "house": "baratheon",
+        "generation": 2,
+        "parents": [
+          "stannis",
+          "selyse"
+        ],
+        "inCast": false
+      }
+    ]
+  },
+  "tully": {
+    "members": [
+      {
+        "id": "hoster",
+        "house": "tully",
+        "generation": 0,
+        "inCast": false
+      },
+      {
+        "id": "cat",
+        "house": "tully",
+        "generation": 1,
+        "parents": [
+          "hoster"
+        ],
+        "inCast": true
+      },
+      {
+        "id": "lysa",
+        "house": "tully",
+        "generation": 1,
+        "parents": [
+          "hoster"
+        ],
+        "inCast": false
+      },
+      {
+        "id": "edmure",
+        "house": "tully",
+        "generation": 1,
+        "parents": [
+          "hoster"
+        ],
+        "inCast": false
+      },
+      {
+        "id": "brynden",
+        "house": "tully",
+        "generation": 1,
+        "inCast": false
+      }
+    ]
+  },
+  "martell": {
+    "members": [
+      {
+        "id": "doran",
+        "house": "martell",
+        "generation": 0,
+        "inCast": false
+      },
+      {
+        "id": "oberyn",
+        "house": "martell",
+        "generation": 0,
+        "inCast": false
+      },
+      {
+        "id": "elia",
+        "house": "martell",
+        "generation": 0,
+        "inCast": false
+      },
+      {
+        "id": "trystane",
+        "house": "martell",
+        "generation": 1,
+        "parents": [
+          "doran"
+        ],
+        "inCast": false
+      },
+      {
+        "id": "arianne",
+        "house": "martell",
+        "generation": 1,
+        "parents": [
+          "doran"
+        ],
+        "inCast": false
+      }
+    ]
+  },
+  "greyjoy": {
+    "members": [
+      {
+        "id": "balon",
+        "house": "greyjoy",
+        "generation": 0,
+        "inCast": false
+      },
+      {
+        "id": "euron",
+        "house": "greyjoy",
+        "generation": 0,
+        "inCast": false
+      },
+      {
+        "id": "victarion",
+        "house": "greyjoy",
+        "generation": 0,
+        "inCast": false
+      },
+      {
+        "id": "aeron",
+        "house": "greyjoy",
+        "generation": 0,
+        "inCast": false
+      },
+      {
+        "id": "theon",
+        "house": "greyjoy",
+        "generation": 1,
+        "parents": [
+          "balon"
+        ],
+        "inCast": true
+      },
+      {
+        "id": "yara",
+        "house": "greyjoy",
+        "generation": 1,
+        "parents": [
+          "balon"
+        ],
+        "inCast": false
+      }
+    ]
+  }
+}

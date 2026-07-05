@@ -1,0 +1,236 @@
+{
+  "ned": {
+    "name": "Eddard \"Ned\" Stark",
+    "title": "Guardián del Norte, Mano del Rey",
+    "bio": "Lord de Invernalia, hombre de honor inquebrantable. Su sentido del deber lo llevó a Desembarco del Rey y, finalmente, al cadalso, encendiendo la Guerra de los Cinco Reyes.",
+    "culture": "Norteño"
+  },
+  "cat": {
+    "name": "Catelyn Stark (Tully)",
+    "title": "Lady de Invernalia",
+    "bio": "Esposa de Ned y madre feroz. Su decisión de apresar a Tyrion y su amor desesperado por sus hijos marcaron el rumbo de la guerra. Murió en la Boda Roja.",
+    "culture": "De los Ríos"
+  },
+  "robb": {
+    "name": "Robb Stark",
+    "title": "Rey en el Norte",
+    "bio": "El Joven Lobo, invicto en el campo de batalla pero traicionado en la mesa. Su muerte en la Boda Roja deshizo la causa del Norte.",
+    "culture": "Norteño"
+  },
+  "jon": {
+    "name": "Jon Nieve",
+    "title": "Lord Comandante; Rey en el Norte",
+    "bio": "Criado como bastardo de Ned, hermano juramentado de la Guardia de la Noche. Su verdadero linaje —hijo de Rhaegar Targaryen y Lyanna Stark— lo convierte en heredero secreto del Trono.",
+    "culture": "Norteño"
+  },
+  "sansa": {
+    "name": "Sansa Stark",
+    "title": "Reina en el Norte",
+    "bio": "De soñadora cortesana a astuta gobernante. Sobrevivió a Joffrey, Meñique y Ramsay para reclamar el Norte como reino independiente.",
+    "culture": "Norteña"
+  },
+  "arya": {
+    "name": "Arya Stark",
+    "title": "Hombre Sin Rostro",
+    "bio": "Rebelde e indómita, se entrenó con los asesinos de Braavos. Mató al Rey de la Noche y, después, partió a explorar lo que hay al oeste de Poniente.",
+    "culture": "Norteña"
+  },
+  "bran": {
+    "name": "Bran Stark",
+    "title": "El Cuervo de Tres Ojos; Rey de los Seis Reinos",
+    "bio": "Tras su caída quedó ligado a la magia: vidente, verdevidente y memoria viva del mundo. Fue elegido rey al final de la guerra.",
+    "culture": "Norteño"
+  },
+  "tywin": {
+    "name": "Tywin Lannister",
+    "title": "Señor de Roca Casterly, Mano del Rey",
+    "bio": "El hombre más poderoso de Poniente. Calculador y despiadado, restauró el prestigio de su casa y orquestó la Boda Roja. Murió a manos de su hijo Tyrion.",
+    "culture": "Del Oeste"
+  },
+  "cersei": {
+    "name": "Cersei Lannister",
+    "title": "Reina de los Siete Reinos",
+    "bio": "Madre de tres reyes y reina por derecho propio. Su amor por el poder y su odio destruyeron a casi todos los que amaba, incluida ella misma.",
+    "culture": "Del Oeste"
+  },
+  "jaime": {
+    "name": "Jaime Lannister",
+    "title": "Lord Comandante de la Guardia Real",
+    "bio": "El Matarreyes. Caballero brillante manchado por la traición a Aerys; su redención y su perdición estuvieron siempre atadas a Cersei.",
+    "culture": "Del Oeste"
+  },
+  "tyrion": {
+    "name": "Tyrion Lannister",
+    "title": "Mano del Rey",
+    "bio": "El Gnomo: brillante, mordaz y subestimado por su estatura. Su ingenio salvó Desembarco y guió, primero a Daenerys y luego a Bran, hacia el poder.",
+    "culture": "Del Oeste"
+  },
+  "joffrey": {
+    "name": "Joffrey Baratheon",
+    "title": "Rey de los Siete Reinos",
+    "bio": "Fruto del incesto de Cersei y Jaime. Cruel y cobarde, su reinado fue una tortura para el reino hasta que murió envenenado en su propia boda.",
+    "culture": "Del Oeste"
+  },
+  "dany": {
+    "name": "Daenerys Targaryen",
+    "title": "Madre de Dragones, Khaleesi, Reina",
+    "bio": "Nacida en el exilio, rompió cadenas y crió tres dragones. Liberadora convertida en conquistadora, su descenso a la \"Reina Loca\" selló su destino bajo el cuchillo de Jon.",
+    "culture": "Valyria"
+  },
+  "viserysT": {
+    "name": "Viserys Targaryen",
+    "title": "\"El Rey Mendigo\"",
+    "bio": "Hermano de Daenerys, obsesionado con recuperar el trono. Cruel y delirante, halló su \"corona de oro\" fundido por Khal Drogo.",
+    "culture": "Valyria"
+  },
+  "rhaegar": {
+    "name": "Rhaegar Targaryen",
+    "title": "Príncipe de Rocadragón",
+    "bio": "Heredero culto y melancólico cuyo rapto (o fuga) con Lyanna Stark encendió la Rebelión de Robert. Murió en el Tridente. Padre secreto de Jon.",
+    "culture": "Valyria"
+  },
+  "robert": {
+    "name": "Robert Baratheon",
+    "title": "Rey de los Siete Reinos",
+    "bio": "El Usurpador. Ganó el trono con su martillo de guerra pero gobernó con desgana, ahogado en vino y nostalgia por Lyanna.",
+    "culture": "De la Tormenta"
+  },
+  "stannis": {
+    "name": "Stannis Baratheon",
+    "title": "Pretendiente al Trono",
+    "bio": "Hermano rígido y justo hasta la obsesión. Creyó ser el héroe profetizado, Azor Ahai, y lo sacrificó todo —incluso a su hija— por esa fe.",
+    "culture": "De la Tormenta"
+  },
+  "baelish": {
+    "name": "Petyr \"Meñique\" Baelish",
+    "title": "Consejero de la Moneda",
+    "bio": "De origen humilde, escaló mediante el caos, que llamaba \"una escalera\". Maestro de la manipulación; su ambición acabó degollada por Arya.",
+    "culture": "De los Dedos"
+  },
+  "varys": {
+    "name": "Varys",
+    "title": "Consejero de los Rumores",
+    "bio": "La Araña. Eunuco y maestro de espías que decía servir \"al reino\". Cambió de bando por el bien común hasta arder por traicionar a Daenerys.",
+    "culture": "De Lys"
+  },
+  "brienne": {
+    "name": "Brienne de Tarth",
+    "title": "Lady Comandante de la Guardia Real",
+    "bio": "Caballero en todo salvo el título, hasta que Jaime la nombró. Encarnación del honor que el reino predica pero rara vez cumple.",
+    "culture": "De la Tormenta"
+  },
+  "hound": {
+    "name": "Sandor \"El Perro\" Clegane",
+    "title": "Guardia juramentado",
+    "bio": "Guerrero brutal marcado por el fuego y por su hermano. Bajo la coraza, un protector reacio de las niñas Stark.",
+    "culture": "Del Oeste"
+  },
+  "davos": {
+    "name": "Davos Seaworth",
+    "title": "Mano del Rey",
+    "bio": "El Caballero de la Cebolla. Antiguo contrabandista de origen humilde cuya honestidad y sentido común lo hicieron consejero de reyes.",
+    "culture": "De la Tormenta"
+  },
+  "melisandre": {
+    "name": "Melisandre",
+    "title": "Sacerdotisa Roja",
+    "bio": "Servidora de R'hllor, el Señor de Luz. Su fe y su magia de sangre cambiaron el rumbo de la guerra, para bien y para mal.",
+    "culture": "De Asshai"
+  },
+  "theon": {
+    "name": "Theon Greyjoy",
+    "title": "Príncipe de Pyke",
+    "bio": "Criado como rehén de los Stark, dividido entre dos familias. Su traición, tortura y redención forman uno de los arcos más trágicos.",
+    "culture": "Del Hierro"
+  },
+  "drogo": {
+    "name": "Khal Drogo",
+    "title": "Khal de los Dothraki",
+    "bio": "Señor de la guerra de las llanuras, esposo de Daenerys. Su muerte y la pira funeraria dieron vida a los dragones.",
+    "culture": "Dothraki"
+  },
+  "jorah": {
+    "name": "Jorah Mormont",
+    "title": "Caballero exiliado",
+    "bio": "Caballero deshonrado y leal eterno de Daenerys. Su amor no correspondido lo llevó a morir defendiéndola en Invernalia.",
+    "culture": "De la Isla del Oso"
+  },
+  "samwell": {
+    "name": "Samwell Tarly",
+    "title": "Maestre y Gran Maestre",
+    "bio": "Despreciado por su padre por ser blando, demostró que la mente vence a la espada. Cronista que tituló la historia \"Canción de Hielo y Fuego\".",
+    "culture": "Del Dominio"
+  },
+  "nightking": {
+    "name": "El Rey de la Noche",
+    "title": "Señor de los Caminantes Blancos",
+    "bio": "Primer Caminante Blanco, creado por los Hijos del Bosque. Su ejército de muertos amenazó con apagar toda vida hasta que Arya lo destruyó.",
+    "culture": "Más allá del Muro"
+  },
+  "viserys1": {
+    "name": "Viserys I Targaryen",
+    "title": "Rey de los Siete Reinos",
+    "bio": "Rey bondadoso pero indeciso. Su empeño en nombrar heredera a su hija Rhaenyra, frente a las ambiciones de la corte, sembró la guerra civil.",
+    "culture": "Valyria"
+  },
+  "rhaenyra": {
+    "name": "Rhaenyra Targaryen",
+    "title": "\"La Reina Negra\", heredera del Trono",
+    "bio": "Primogénita de Viserys, nombrada heredera y luego usurpada por su medio hermano. Jinete de Syrax, lideró el bando Negro en la Danza.",
+    "culture": "Valyria"
+  },
+  "daemon": {
+    "name": "Daemon Targaryen",
+    "title": "Príncipe de la Ciudad",
+    "bio": "Guerrero impredecible y jinete de Caraxes. Esposo y tío de Rhaenyra, su sed de poder fue tan brillante como destructiva.",
+    "culture": "Valyria"
+  },
+  "alicent": {
+    "name": "Alicent Hightower",
+    "title": "Reina consorte",
+    "bio": "Hija de la Mano Otto, segunda esposa de Viserys. Impulsó la causa de su hijo Aegon, encabezando el bando Verde.",
+    "culture": "Del Dominio"
+  },
+  "otto": {
+    "name": "Otto Hightower",
+    "title": "Mano del Rey",
+    "bio": "Maestro político que colocó a su hija junto al rey y maniobró sin descanso para sentar a su nieto en el trono.",
+    "culture": "Del Dominio"
+  },
+  "aegon2": {
+    "name": "Aegon II Targaryen",
+    "title": "Rey usurpador (los Verdes)",
+    "bio": "Coronado por la facción Verde pese a no ser el heredero designado. Jinete de Fuegosolar; su reinado fue breve y sangriento.",
+    "culture": "Valyria"
+  },
+  "aemond": {
+    "name": "Aemond Targaryen",
+    "title": "Príncipe; jinete de Vhagar",
+    "bio": "Tuerto y temible, montaba al dragón más grande y viejo, Vhagar. Su rivalidad encendió algunas de las peores tragedias de la guerra.",
+    "culture": "Valyria"
+  },
+  "rhaenys": {
+    "name": "Rhaenys Targaryen",
+    "title": "\"La Reina que Nunca Fue\"",
+    "bio": "Pasada por alto en la sucesión pese a su derecho. Jinete de Meleys, esposa de Corlys Velaryon y voz de la prudencia.",
+    "culture": "Valyria"
+  },
+  "corlys": {
+    "name": "Corlys Velaryon",
+    "title": "\"La Serpiente Marina\", Señor de las Mareas",
+    "bio": "El hombre más rico de Poniente, gran navegante y comandante naval. Su flota fue decisiva para el bando Negro.",
+    "culture": "Valyria"
+  },
+  "dunk": {
+    "name": "Ser Duncan \"Dunk\" el Alto",
+    "title": "Caballero errante; Lord Comandante",
+    "bio": "Un mozo de origen humilde que se hizo caballero. Gigantesco, noble y de buen corazón, sus aventuras junto a \"Egg\" recorren los Siete Reinos.",
+    "culture": "De Lecho de Pulgas"
+  },
+  "egg": {
+    "name": "Aegon \"Egg\" V Targaryen",
+    "title": "Rey de los Siete Reinos",
+    "bio": "Cuarto hijo de un cuarto hijo, viajó disfrazado de escudero de Dunk. Su contacto con el pueblo llano lo convirtió en el \"Rey Improbable\".",
+    "culture": "Valyria"
+  }
+}

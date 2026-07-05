@@ -1,10 +1,12 @@
 import { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
-import HouseInitial from '../../common/HouseInitial'
-import StatusBadge from '../../common/StatusBadge'
-import SagaTag from '../../common/SagaTag'
-import type { EncDetail } from '../../../hooks/useEncyclopedia'
-import { SAGA_META } from '../../../data/progress'
+import { useTranslation } from 'react-i18next'
+import type { EncDetail } from '@/hooks/useEncyclopedia'
+import { useDataStore } from '@/store/useDataStore'
+import { translationNameSpace } from '@/config/lang'
+import HouseInitial from '@/components/common/HouseInitial'
+import StatusBadge from '@/components/common/StatusBadge'
+import SagaTag from '@/components/common/SagaTag'
 
 interface DetailPanelProps {
   detail: EncDetail
@@ -83,6 +85,8 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 
 export default function DetailPanel({ detail, onClose }: DetailPanelProps) {
   const panelRef = useRef<HTMLDivElement>(null)
+  const { sagaMeta: SAGA_META } = useDataStore()
+  const { t } = useTranslation(translationNameSpace.common)
 
   // Close on Escape
   useEffect(() => {
@@ -110,7 +114,7 @@ export default function DetailPanel({ detail, onClose }: DetailPanelProps) {
   if (detail.type === 'char') {
     const { char, house, stateLabel, stateColor, isFuture } = detail
     name = isFuture ? '???' : char.name
-    subtitle = isFuture ? 'Aún no aparece en la saga' : char.title
+    subtitle = isFuture ? t('detail.notAppearedYet', 'Aún no aparece en la saga') : char.title
     initial = house?.initial ?? char.name[0]
     accent = house?.accent ?? '#c9a44c'
     c1 = house?.c1 ?? '#1c1610'
@@ -161,7 +165,7 @@ export default function DetailPanel({ detail, onClose }: DetailPanelProps) {
         ref={panelRef}
         role="dialog"
         aria-modal="true"
-        aria-label={`Detalles de ${name}`}
+        aria-label={t('detail.ariaDetails', { name, defaultValue: `Detalles de ${name}` })}
         tabIndex={-1}
         initial={{ x: 40, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
@@ -201,7 +205,7 @@ export default function DetailPanel({ detail, onClose }: DetailPanelProps) {
           {/* Close button */}
           <button
             onClick={onClose}
-            aria-label="Cerrar"
+            aria-label={t('detail.close', 'Cerrar')}
             style={{
               position: 'absolute',
               top: '1rem',
@@ -280,31 +284,31 @@ export default function DetailPanel({ detail, onClose }: DetailPanelProps) {
                     margin: 0,
                   }}
                 >
-                  Este personaje aún no ha aparecido según tu punto de progreso actual.
+                  {t('detail.futureCharacter', 'Este personaje aún no ha aparecido según tu punto de progreso actual.')}
                 </p>
               )
             }
             return (
               <>
                 {house && (
-                  <Section title="Casa">
+                  <Section title={t('detail.house', 'Casa')}>
                     <dl style={{ margin: 0 }}>
-                      <Row label="Casa" value={house.name} />
-                      <Row label="Lema" value={house.words} />
-                      {char.culture && <Row label="Cultura" value={char.culture} />}
+                      <Row label={t('detail.house', 'Casa')} value={house.name} />
+                      <Row label={t('detail.motto', 'Lema')} value={house.words} />
+                      {char.culture && <Row label={t('detail.culture', 'Cultura')} value={char.culture} />}
                     </dl>
                   </Section>
                 )}
                 {!house && char.culture && (
-                  <Section title="Origen">
+                  <Section title={t('detail.origin', 'Origen')}>
                     <dl style={{ margin: 0 }}>
-                      <Row label="Cultura" value={char.culture} />
+                      <Row label={t('detail.culture', 'Cultura')} value={char.culture} />
                     </dl>
                   </Section>
                 )}
 
                 {char.bio && (
-                  <Section title="Biografía">
+                  <Section title={t('detail.biography', 'Biografía')}>
                     <p
                       style={{
                         margin: 0,
@@ -319,7 +323,7 @@ export default function DetailPanel({ detail, onClose }: DetailPanelProps) {
                 )}
 
                 {char.sagas && char.sagas.length > 0 && (
-                  <Section title="Aparece en">
+                  <Section title={t('detail.appearsIn', 'Aparece en')}>
                     <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
                       {char.sagas.map((s) => {
                         const meta = SAGA_META[s]
@@ -338,17 +342,17 @@ export default function DetailPanel({ detail, onClose }: DetailPanelProps) {
             const { house, members } = detail
             return (
               <>
-                <Section title="Datos">
+                <Section title={t('detail.data', 'Datos')}>
                   <dl style={{ margin: 0 }}>
-                    <Row label="Lema" value={house.words} />
-                    <Row label="Sede" value={house.seat} />
-                    <Row label="Región" value={house.region} />
-                    <Row label="Emblema" value={house.animal} />
-                    <Row label="Estado" value={house.status} />
+                    <Row label={t('detail.motto', 'Lema')} value={house.words} />
+                    <Row label={t('detail.seat', 'Sede')} value={house.seat} />
+                    <Row label={t('detail.region', 'Región')} value={house.region} />
+                    <Row label={t('detail.emblem', 'Emblema')} value={house.animal} />
+                    <Row label={t('detail.status', 'Estado')} value={house.status} />
                   </dl>
                 </Section>
 
-                <Section title="Historia">
+                <Section title={t('detail.history', 'Historia')}>
                   <p
                     style={{
                       margin: 0,
@@ -362,7 +366,7 @@ export default function DetailPanel({ detail, onClose }: DetailPanelProps) {
                 </Section>
 
                 {members.length > 0 && (
-                  <Section title={`Miembros (${members.length})`}>
+                  <Section title={t('detail.membersCount', { count: members.length, defaultValue: `Miembros (${members.length})` })}>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
                       {members.map((m, i) => (
                         <span
@@ -389,14 +393,14 @@ export default function DetailPanel({ detail, onClose }: DetailPanelProps) {
             const { place } = detail
             return (
               <>
-                <Section title="Datos">
+                <Section title={t('detail.data', 'Datos')}>
                   <dl style={{ margin: 0 }}>
-                    <Row label="Región" value={place.region} />
-                    <Row label="Tipo" value={place.kind} />
+                    <Row label={t('detail.region', 'Región')} value={place.region} />
+                    <Row label={t('detail.type', 'Tipo')} value={place.kind} />
                   </dl>
                 </Section>
 
-                <Section title="Descripción">
+                <Section title={t('detail.description', 'Descripción')}>
                   <p
                     style={{
                       margin: 0,

@@ -1,8 +1,9 @@
-import { useAppStore } from '../store/useAppStore'
-import { HOUSES, CHARS, PLACES } from '../data/characters'
-import { SAGA_META } from '../data/progress'
+import { useTranslation } from 'react-i18next'
+import { useAppStore } from '@/store/useAppStore'
+import { useDataStore } from '@/store/useDataStore'
 import { useProgress } from './useProgress'
-import type { House, Character, Place } from '../types/index.ts'
+import { translationNameSpace } from '@/config/lang'
+import type { House, Character, Place } from '@/types/index.ts'
 
 export interface EncItem {
   id: string
@@ -53,8 +54,11 @@ export interface PlaceDetail {
 export type EncDetail = CharDetail | HouseDetail | PlaceDetail
 
 export function useEncyclopedia() {
+  const { t: tCommon } = useTranslation(translationNameSpace.common)
+  const { t: tEnc } = useTranslation(translationNameSpace.encyclopedia)
   const { encTab, encSearch, encHouse, encSel, setEncSel } = useAppStore()
-  const { charState, stateMeta } = useProgress()
+  const { houses: HOUSES, characters: CHARS, places: PLACES } = useDataStore()
+  const { charState, stateMeta, SAGA_META } = useProgress()
 
   const q = encSearch.trim().toLowerCase()
 
@@ -72,7 +76,7 @@ export function useEncyclopedia() {
         return {
           id: c.id,
           name: isFuture ? '???' : c.name,
-          subtitle: isFuture ? 'Aún no aparece en la saga' : c.title,
+          subtitle: isFuture ? tCommon('detail.notAppearedYet', 'Aún no aparece en la saga') : c.title,
           accent: h?.accent ?? '#c9a44c',
           initial: h?.initial ?? '?',
           status: m.label,
@@ -133,7 +137,7 @@ export function useEncyclopedia() {
     }
   }
 
-  const houseChips = [{ id: 'all', name: 'Todas', active: encHouse === 'all' }, ...HOUSES.map(h => ({ id: h.id, name: h.name, active: encHouse === h.id }))]
+  const houseChips = [{ id: 'all', name: tEnc('allHouses', 'Todas'), active: encHouse === 'all' }, ...HOUSES.map(h => ({ id: h.id, name: h.name, active: encHouse === h.id }))]
 
   return { items, detail, houseChips, hasDetail: !!detail }
 }

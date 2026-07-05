@@ -1,0 +1,65 @@
+{
+  "brand": {
+    "ariaHome": "Go home",
+    "subtitle": "Encyclopedia"
+  },
+  "nav": {
+    "home": "Home",
+    "encyclopedia": "Encyclopedia",
+    "timeline": "Chronology",
+    "genealogy": "Genealogy",
+    "map": "Map",
+    "curios": "Curiosities"
+  },
+  "lang": {
+    "ariaSelect": "Select language"
+  },
+  "progress": {
+    "configureTitle": "Set progress point",
+    "ariaSelector": "Saga point selector",
+    "title": "Saga point",
+    "subtitle": "How far have you seen/read?",
+    "modeSerie": "TV series",
+    "modeLibros": "Books",
+    "stateFuture": "Not yet appeared",
+    "stateDead": "Dead",
+    "stateAlive": "Alive",
+    "throne": {
+      "houseTargaryen": "House Targaryen",
+      "houseBaratheon": "House Baratheon",
+      "houseLannister": "House Lannister",
+      "sixKingdoms": "The Six Kingdoms",
+      "viserysI": "Viserys I",
+      "aegonVsRhaenyra": "Aegon II vs. Rhaenyra (at war)",
+      "targaryenDynasty": "Targaryen dynasty",
+      "robertI": "Robert I",
+      "joffreyI": "Joffrey I",
+      "tommenI": "Tommen I",
+      "cerseiI": "Cersei I",
+      "brandonTheBroken": "Bran the Broken"
+    }
+  },
+  "loading": "Loading the encyclopedia…",
+  "errorLoadingData": "Encyclopedia data could not be loaded.",
+  "detail": {
+    "ariaDetails": "Details of {{name}}",
+    "close": "Close",
+    "notAppearedYet": "Doesn't appear in the saga yet",
+    "futureCharacter": "This character has not yet appeared based on your current progress point.",
+    "house": "House",
+    "motto": "Motto",
+    "seat": "Seat",
+    "region": "Region",
+    "emblem": "Emblem",
+    "status": "Status",
+    "culture": "Culture",
+    "origin": "Origin",
+    "biography": "Biography",
+    "appearsIn": "Appears in",
+    "data": "Data",
+    "history": "History",
+    "membersCount": "Members ({{count}})",
+    "type": "Type",
+    "description": "Description"
+  }
+}

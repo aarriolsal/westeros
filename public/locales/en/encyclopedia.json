@@ -1,0 +1,16 @@
+{
+  "kicker": "Encyclopedia",
+  "title": "The Compendium",
+  "tabsAriaLabel": "Compendium Categories",
+  "tabs": {
+    "characters": "Characters",
+    "houses": "Houses",
+    "places": "Places"
+  },
+  "allHouses": "All",
+  "searchLabel": "Search the compendium",
+  "searchPlaceholder": "Search the compendium…",
+  "noResults": "No results were found for your search.",
+  "resultsCount_one": "{{count}} entry",
+  "resultsCount_other": "{{count}} entries"
+}

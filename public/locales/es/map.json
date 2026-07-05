@@ -1,0 +1,10 @@
+{
+  "kicker": "Geografía",
+  "title": "El Continente Poniente",
+  "hint": "Explora el mapa: arrastra y haz zoom, y selecciona una región para ver sus señores, casas y personajes.",
+  "regionLabel": "Región",
+  "closePanelAria": "Cerrar panel",
+  "housesHeading": "Casas",
+  "notableCharactersHeading": "Personajes notables",
+  "placeSeatOf": "Sede de la Casa {{house}}"
+}

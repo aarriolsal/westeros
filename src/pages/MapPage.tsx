@@ -1,59 +1,38 @@
 import { useMemo, useRef, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { MapContainer, TileLayer, GeoJSON, CircleMarker, Popup } from 'react-leaflet'
+import { useTranslation } from 'react-i18next'
 import type { Layer, GeoJSON as LeafletGeoJSON, StyleFunction } from 'leaflet'
 import 'leaflet/dist/leaflet.css'
-import { useAppStore } from '../store/useAppStore'
-import { CHARS, HOUSES, PLACES } from '../data/characters'
-import { useGeoData } from '../components/sections/map/useGeoData'
-import { MAP_CRS, MAP_CENTER, MAP_MIN_ZOOM, MAP_MAX_ZOOM, MAP_BOUNDS, TILE_URL } from '../components/sections/map/mapConfig'
-
-// ─── Region metadata (presentation only — geometry lives in public/data/*.geojson) ──
-
-interface RegionMeta {
-  id: string
-  name: string
-  tagline: string
-  note: string
-  color: string
-  highlight: string
-}
-
-const REGION_META: RegionMeta[] = [
-  { id: 'beyond', name: 'Más allá del Muro', tagline: 'Tierras salvajes al norte del Muro', note: 'Territorio helado y hostil, hogar del Pueblo Libre, los gigantes y, en las profundidades, de los Caminantes Blancos.', color: '#3f5560', highlight: '#5c7784' },
-  { id: 'north', name: 'El Norte', tagline: 'Invernalia y los Stark', note: 'Vastos territorios más allá del Cuello. Antiguo reino de los Primeros Hombres, hoy guardado por los Stark.', color: '#2f363c', highlight: '#4a5568' },
-  { id: 'iron', name: 'Islas del Hierro', tagline: 'Pyke y los Greyjoy', note: 'Islas rocosas de saqueadores y navegantes. Los Hombres del Hierro pagan el precio del hierro y no se arrodillan de buen grado.', color: '#14181c', highlight: '#1f2429' },
-  { id: 'riverlands', name: 'Tierras de los Ríos', tagline: 'Los Tully y el Tridente', note: 'Tierras fértiles surcadas de ríos. Sede de la Casa Tully, campo de batalla constante durante la Guerra de los Cinco Reyes.', color: '#244e85', highlight: '#3a6fb0' },
-  { id: 'vale', name: 'El Valle', tagline: 'Nido de Águilas y los Arryn', note: 'Reino de montaña con una fortaleza inexpugnable. La Casa Arryn ha guardado el Valle durante miles de años.', color: '#1f5fa0', highlight: '#2c7bc6' },
-  { id: 'westerlands', name: 'Tierras del Oeste', tagline: 'Roca Casterly y los Lannister', note: 'Ricas minas de oro bajo Roca Casterly. La Casa Lannister gobierna las tierras más ricas de Poniente.', color: '#7d1226', highlight: '#9b1b30' },
-  { id: 'crownlands', name: 'Las Coronas', tagline: 'Desembarco del Rey', note: 'Región capital en torno a Desembarco del Rey. Sede del Trono de Hierro y la corte real.', color: '#0b0b0b', highlight: '#1a1a2e' },
-  { id: 'stormlands', name: 'Tierras de la Tormenta', tagline: 'Bastión de Tormentas y Baratheon', note: 'Costas escarpadas azotadas por tormentas. Cuna de la Casa Baratheon y de la rebelión de Robert.', color: '#161616', highlight: '#2a2a2a' },
-  { id: 'reach', name: 'El Dominio', tagline: 'Altojardín y los Tyrell', note: 'La región más poblada y fértil. La Casa Tyrell dispone de ejércitos numerosos y graneros sin fin.', color: '#1f5a32', highlight: '#2d7a45' },
-  { id: 'dorne', name: 'Dorne', tagline: 'Lanza del Sol y los Martell', note: 'Reino desértico jamás conquistado por Aegon. Se unió al reino por matrimonio y conserva sus propias costumbres.', color: '#c2511c', highlight: '#e0681f' },
-]
-
-function getRegionMeta(id: string) {
-  return REGION_META.find(r => r.id === id)
-}
-
-function getRegionHouses(id: string) {
-  const meta = getRegionMeta(id)
-  if (!meta) return []
-  return HOUSES.filter(h => h.region === meta.name)
-}
-
-function getRegionChars(id: string) {
-  const houseIds = getRegionHouses(id).map(h => h.id)
-  return CHARS.filter(c => c.house && houseIds.includes(c.house))
-}
+import { useAppStore } from '@/store/useAppStore'
+import { useDataStore } from '@/store/useDataStore'
+import { useGeoData } from '@/components/sections/map/useGeoData'
+import { MAP_CRS, MAP_CENTER, MAP_MIN_ZOOM, MAP_MAX_ZOOM, MAP_BOUNDS, TILE_URL } from '@/config/map'
+import { translationNameSpace } from '@/config/lang'
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
 export default function MapPage() {
+  const { t } = useTranslation(translationNameSpace.map)
+  const { t: tCommon } = useTranslation(translationNameSpace.common)
   const { region, setRegion } = useAppStore()
-  const { regions, places } = useGeoData()
+  const { regions: regionsGeo, places } = useGeoData()
+  const { houses: HOUSES, characters: CHARS, places: PLACES, regions: REGION_META } = useDataStore()
   const geoJsonRef = useRef<LeafletGeoJSON | null>(null)
   const [regionVersion, setRegionVersion] = useState(0) // bump to force GeoJSON restyle on selection change
+
+  function getRegionMeta(id: string) {
+    return REGION_META.find(r => r.id === id)
+  }
+
+  function getRegionHouses(id: string) {
+    return HOUSES.filter(h => h.regionId === id)
+  }
+
+  function getRegionChars(id: string) {
+    const houseIds = getRegionHouses(id).map(h => h.id)
+    return CHARS.filter(c => c.house && houseIds.includes(c.house))
+  }
 
   const activeMeta = region ? getRegionMeta(region) : null
   const activeHouses = region ? getRegionHouses(region) : []
@@ -91,8 +70,8 @@ export default function MapPage() {
     })
   }
 
-  const placeById = useMemo(() => new Map<string, typeof PLACES[number]>(PLACES.map(p => [p.id, p])), [])
-  const houseById = useMemo(() => new Map<string, typeof HOUSES[number]>(HOUSES.map(h => [h.id, h])), [])
+  const placeById = useMemo(() => new Map<string, typeof PLACES[number]>(PLACES.map(p => [p.id, p])), [PLACES])
+  const houseById = useMemo(() => new Map<string, typeof HOUSES[number]>(HOUSES.map(h => [h.id, h])), [HOUSES])
 
   return (
     <section style={{ maxWidth: 1100, margin: '0 auto', padding: '2rem 1rem 4rem' }}>
@@ -106,7 +85,7 @@ export default function MapPage() {
           color: 'var(--color-gold-dim)',
           margin: '0 0 0.4rem',
         }}>
-          Geografía
+          {t('kicker', 'Geografía')}
         </p>
         <h1 style={{
           fontFamily: 'var(--font-cinzel)',
@@ -117,7 +96,7 @@ export default function MapPage() {
           lineHeight: 1.15,
           textWrap: 'balance',
         }}>
-          El Continente Poniente
+          {t('title', 'El Continente Poniente')}
         </h1>
         <p style={{
           color: 'var(--color-text-dim)',
@@ -125,7 +104,7 @@ export default function MapPage() {
           margin: '0.6rem 0 0',
           lineHeight: 1.6,
         }}>
-          Explora el mapa: arrastra y haz zoom, y selecciona una región para ver sus señores, casas y personajes.
+          {t('hint', 'Explora el mapa: arrastra y haz zoom, y selecciona una región para ver sus señores, casas y personajes.')}
         </p>
       </div>
 
@@ -156,10 +135,10 @@ export default function MapPage() {
           >
             <TileLayer url={TILE_URL} attribution="Tiles: Atlas of Thrones basemap" />
 
-            {regions && (
+            {regionsGeo && (
               <GeoJSON
                 ref={geoJsonRef}
-                data={regions}
+                data={regionsGeo}
                 style={regionStyle}
                 onEachFeature={onEachRegion}
               />
@@ -199,7 +178,7 @@ export default function MapPage() {
                   <Popup>
                     <strong>{house.seat}</strong>
                     <br />
-                    <em>Sede de la Casa {house.name}</em>
+                    <em>{t('placeSeatOf', { house: house.name, defaultValue: `Sede de la Casa ${house.name}` })}</em>
                     <p style={{ margin: '4px 0 0' }}>{house.summary}</p>
                   </Popup>
                 </CircleMarker>
@@ -243,7 +222,7 @@ export default function MapPage() {
                       color: 'var(--color-gold-dim)',
                       margin: '0 0 0.35rem',
                     }}>
-                      Región
+                      {t('regionLabel', 'Región')}
                     </p>
                     <h2 style={{
                       fontFamily: 'var(--font-cinzel)',
@@ -259,7 +238,7 @@ export default function MapPage() {
                   </div>
                   <button
                     onClick={() => { setRegion(null); setRegionVersion(v => v + 1) }}
-                    aria-label="Cerrar panel"
+                    aria-label={t('closePanelAria', 'Cerrar panel')}
                     style={{
                       background: 'transparent',
                       border: '1px solid var(--color-border)',
@@ -312,7 +291,7 @@ export default function MapPage() {
                     margin: '0 0 0.9rem',
                     fontWeight: 600,
                   }}>
-                    Casas
+                    {t('housesHeading', 'Casas')}
                   </h3>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
                     {activeHouses.map(house => (
@@ -374,7 +353,7 @@ export default function MapPage() {
                     margin: '0 0 0.9rem',
                     fontWeight: 600,
                   }}>
-                    Personajes notables
+                    {t('notableCharactersHeading', 'Personajes notables')}
                   </h3>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
                     {activeChars.map(char => (
@@ -392,12 +371,12 @@ export default function MapPage() {
                             fontSize: '0.7rem',
                             padding: '0.1rem 0.45rem',
                             borderRadius: 3,
-                            background: char.status === 'Vivo' ? '#5aa86a22' : '#9b3b3b22',
-                            color: char.status === 'Vivo' ? 'var(--color-alive)' : 'var(--color-dead)',
-                            border: `1px solid ${char.status === 'Vivo' ? '#5aa86a44' : '#9b3b3b44'}`,
+                            background: char.status === 'alive' ? '#5aa86a22' : '#9b3b3b22',
+                            color: char.status === 'alive' ? 'var(--color-alive)' : 'var(--color-dead)',
+                            border: `1px solid ${char.status === 'alive' ? '#5aa86a44' : '#9b3b3b44'}`,
                             fontVariantNumeric: 'tabular-nums',
                           }}>
-                            {char.status}
+                            {char.status === 'alive' ? tCommon('progress.stateAlive', 'Vivo') : tCommon('progress.stateDead', 'Muerto')}
                           </span>
                         </div>
                         <p style={{ fontSize: '0.78rem', color: 'var(--color-text-dim)', margin: 0, lineHeight: 1.55 }}>

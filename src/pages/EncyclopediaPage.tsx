@@ -1,18 +1,14 @@
 import { motion, AnimatePresence } from 'framer-motion'
-import { useEncyclopedia } from '../hooks/useEncyclopedia'
-import { useAppStore } from '../store/useAppStore'
-import { HOUSES, CHARS } from '../data/characters'
-import EncItemCard from '../components/sections/encyclopedia/EncItemCard'
-import DetailPanel from '../components/sections/encyclopedia/DetailPanel'
-import SectionTitle from '../components/common/SectionTitle'
-import EmptyState from '../components/common/EmptyState'
-import type { EncTab } from '../types/index.ts'
-
-const TABS: Array<{ id: EncTab; label: string; count: number }> = [
-  { id: 'characters', label: 'Personajes', count: CHARS.length },
-  { id: 'houses', label: 'Casas', count: HOUSES.length },
-  { id: 'places', label: 'Lugares', count: 12 },
-]
+import { useTranslation } from 'react-i18next'
+import { useEncyclopedia } from '@/hooks/useEncyclopedia'
+import { useAppStore } from '@/store/useAppStore'
+import { useDataStore } from '@/store/useDataStore'
+import EncItemCard from '@/components/sections/encyclopedia/EncItemCard'
+import DetailPanel from '@/components/sections/encyclopedia/DetailPanel'
+import SectionTitle from '@/components/common/SectionTitle'
+import EmptyState from '@/components/common/EmptyState'
+import { translationNameSpace } from '@/config/lang'
+import type { EncTab } from '@/types/index.ts'
 
 const cardVariants = {
   hidden: { opacity: 0, y: 12 },
@@ -28,8 +24,16 @@ const cardVariants = {
 }
 
 export default function EncyclopediaPage() {
+  const { t } = useTranslation(translationNameSpace.encyclopedia)
   const { encTab, encSearch, encHouse, setEncTab, setEncSearch, setEncHouse, setEncSel } = useAppStore()
   const { items, detail, houseChips } = useEncyclopedia()
+  const { characters: CHARS, houses: HOUSES, places: PLACES } = useDataStore()
+
+  const TABS: Array<{ id: EncTab; label: string; count: number }> = [
+    { id: 'characters', label: t('tabs.characters', 'Personajes'), count: CHARS.length },
+    { id: 'houses', label: t('tabs.houses', 'Casas'), count: HOUSES.length },
+    { id: 'places', label: t('tabs.places', 'Lugares'), count: PLACES.length },
+  ]
 
   return (
     <section
@@ -41,7 +45,7 @@ export default function EncyclopediaPage() {
     >
       {/* Page header */}
       <div style={{ marginBottom: '2rem' }}>
-        <SectionTitle kicker="Enciclopedia" title="El Compendio" />
+        <SectionTitle kicker={t('kicker', 'Enciclopedia')} title={t('title', 'El Compendio')} />
       </div>
 
       {/* Controls bar */}
@@ -57,7 +61,7 @@ export default function EncyclopediaPage() {
         {/* Tab bar */}
         <div
           role="tablist"
-          aria-label="Categorías del compendio"
+          aria-label={t('tabsAriaLabel', 'Categorías del compendio')}
           style={{
             display: 'flex',
             gap: 2,
@@ -114,11 +118,11 @@ export default function EncyclopediaPage() {
         {/* Search input */}
         <div style={{ flex: 1, minWidth: 180 }}>
           <label style={{ position: 'absolute', width: 1, height: 1, overflow: 'hidden', clip: 'rect(0,0,0,0)' }}>
-            Buscar en el compendio
+            {t('searchLabel', 'Buscar en el compendio')}
           </label>
           <input
             type="search"
-            placeholder="Buscar en el compendio…"
+            placeholder={t('searchPlaceholder', 'Buscar en el compendio…')}
             value={encSearch}
             onChange={(e) => setEncSearch(e.target.value)}
             style={{
@@ -220,13 +224,13 @@ export default function EncyclopediaPage() {
             marginBottom: '1rem',
           }}
         >
-          {items.length} {items.length === 1 ? 'entrada' : 'entradas'}
+          {t('resultsCount', { count: items.length })}
         </p>
       )}
 
       {/* Grid */}
       {items.length === 0 ? (
-        <EmptyState message="No se encontraron resultados para tu búsqueda." />
+        <EmptyState message={t('noResults', 'No se encontraron resultados para tu búsqueda.')} />
       ) : (
         <motion.div
           key={encTab + encSearch + encHouse}

@@ -1,0 +1,75 @@
+{
+  "points": {
+    "s_hotd1": {
+      "label": "La Casa del Dragón · T1"
+    },
+    "s_hotd2": {
+      "label": "La Casa del Dragón · T2"
+    },
+    "s_knight": {
+      "label": "El Caballero de los 7 Reinos · T1"
+    },
+    "s_got1": {
+      "label": "Juego de Tronos · T1"
+    },
+    "s_got2": {
+      "label": "Juego de Tronos · T2"
+    },
+    "s_got3": {
+      "label": "Juego de Tronos · T3"
+    },
+    "s_got4": {
+      "label": "Juego de Tronos · T4"
+    },
+    "s_got5": {
+      "label": "Juego de Tronos · T5"
+    },
+    "s_got6": {
+      "label": "Juego de Tronos · T6"
+    },
+    "s_got7": {
+      "label": "Juego de Tronos · T7"
+    },
+    "s_got8": {
+      "label": "Juego de Tronos · T8"
+    },
+    "b_fs": {
+      "label": "Fuego y Sangre"
+    },
+    "b_dunk": {
+      "label": "El Caballero de los 7 Reinos (Dunk y Egg)"
+    },
+    "b1": {
+      "label": "Juego de Tronos (Libro I)"
+    },
+    "b2": {
+      "label": "Choque de Reyes (II)"
+    },
+    "b3": {
+      "label": "Tormenta de Espadas (III)"
+    },
+    "b4": {
+      "label": "Festín de Cuervos (IV)"
+    },
+    "b5": {
+      "label": "Danza de Dragones (V)"
+    }
+  },
+  "allPoint": {
+    "label": "Toda la saga (sin ocultar nada)"
+  },
+  "sagaMeta": {
+    "got": {
+      "label": "Juego de Tronos"
+    },
+    "hotd": {
+      "label": "La Casa del Dragón"
+    },
+    "dunk": {
+      "label": "El Caballero de los 7 Reinos"
+    },
+    "lore": {
+      "label": "Historia antigua"
+    }
+  }
+}

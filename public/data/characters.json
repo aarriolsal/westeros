@@ -1,0 +1,314 @@
+[
+  {
+    "id": "ned",
+    "house": "stark",
+    "sagas": [
+      "got"
+    ],
+    "alive": false
+  },
+  {
+    "id": "cat",
+    "house": "stark",
+    "sagas": [
+      "got"
+    ],
+    "alive": false
+  },
+  {
+    "id": "robb",
+    "house": "stark",
+    "sagas": [
+      "got"
+    ],
+    "alive": false
+  },
+  {
+    "id": "jon",
+    "house": "stark",
+    "sagas": [
+      "got"
+    ],
+    "alive": true
+  },
+  {
+    "id": "sansa",
+    "house": "stark",
+    "sagas": [
+      "got"
+    ],
+    "alive": true
+  },
+  {
+    "id": "arya",
+    "house": "stark",
+    "sagas": [
+      "got"
+    ],
+    "alive": true
+  },
+  {
+    "id": "bran",
+    "house": "stark",
+    "sagas": [
+      "got"
+    ],
+    "alive": true
+  },
+  {
+    "id": "tywin",
+    "house": "lannister",
+    "sagas": [
+      "got"
+    ],
+    "alive": false
+  },
+  {
+    "id": "cersei",
+    "house": "lannister",
+    "sagas": [
+      "got"
+    ],
+    "alive": false
+  },
+  {
+    "id": "jaime",
+    "house": "lannister",
+    "sagas": [
+      "got"
+    ],
+    "alive": false
+  },
+  {
+    "id": "tyrion",
+    "house": "lannister",
+    "sagas": [
+      "got"
+    ],
+    "alive": true
+  },
+  {
+    "id": "joffrey",
+    "house": "lannister",
+    "sagas": [
+      "got"
+    ],
+    "alive": false
+  },
+  {
+    "id": "dany",
+    "house": "targaryen",
+    "sagas": [
+      "got"
+    ],
+    "alive": false
+  },
+  {
+    "id": "viserysT",
+    "house": "targaryen",
+    "sagas": [
+      "got"
+    ],
+    "alive": false
+  },
+  {
+    "id": "rhaegar",
+    "house": "targaryen",
+    "sagas": [
+      "got"
+    ],
+    "alive": false
+  },
+  {
+    "id": "robert",
+    "house": "baratheon",
+    "sagas": [
+      "got"
+    ],
+    "alive": false
+  },
+  {
+    "id": "stannis",
+    "house": "baratheon",
+    "sagas": [
+      "got"
+    ],
+    "alive": false
+  },
+  {
+    "id": "baelish",
+    "house": "tully",
+    "sagas": [
+      "got"
+    ],
+    "alive": false
+  },
+  {
+    "id": "varys",
+    "house": "targaryen",
+    "sagas": [
+      "got"
+    ],
+    "alive": false
+  },
+  {
+    "id": "brienne",
+    "house": "baratheon",
+    "sagas": [
+      "got"
+    ],
+    "alive": true
+  },
+  {
+    "id": "hound",
+    "house": "lannister",
+    "sagas": [
+      "got"
+    ],
+    "alive": false
+  },
+  {
+    "id": "davos",
+    "house": "baratheon",
+    "sagas": [
+      "got"
+    ],
+    "alive": true
+  },
+  {
+    "id": "melisandre",
+    "house": "targaryen",
+    "sagas": [
+      "got"
+    ],
+    "alive": false
+  },
+  {
+    "id": "theon",
+    "house": "greyjoy",
+    "sagas": [
+      "got"
+    ],
+    "alive": false
+  },
+  {
+    "id": "drogo",
+    "house": "targaryen",
+    "sagas": [
+      "got"
+    ],
+    "alive": false
+  },
+  {
+    "id": "jorah",
+    "house": "stark",
+    "sagas": [
+      "got"
+    ],
+    "alive": false
+  },
+  {
+    "id": "samwell",
+    "house": "tarly",
+    "sagas": [
+      "got"
+    ],
+    "alive": true
+  },
+  {
+    "id": "nightking",
+    "house": "",
+    "sagas": [
+      "got"
+    ],
+    "alive": false
+  },
+  {
+    "id": "viserys1",
+    "house": "targaryen",
+    "sagas": [
+      "hotd"
+    ],
+    "alive": false
+  },
+  {
+    "id": "rhaenyra",
+    "house": "targaryen",
+    "sagas": [
+      "hotd"
+    ],
+    "alive": false
+  },
+  {
+    "id": "daemon",
+    "house": "targaryen",
+    "sagas": [
+      "hotd"
+    ],
+    "alive": false
+  },
+  {
+    "id": "alicent",
+    "house": "hightower",
+    "sagas": [
+      "hotd"
+    ],
+    "alive": false
+  },
+  {
+    "id": "otto",
+    "house": "hightower",
+    "sagas": [
+      "hotd"
+    ],
+    "alive": false
+  },
+  {
+    "id": "aegon2",
+    "house": "targaryen",
+    "sagas": [
+      "hotd"
+    ],
+    "alive": false
+  },
+  {
+    "id": "aemond",
+    "house": "targaryen",
+    "sagas": [
+      "hotd"
+    ],
+    "alive": false
+  },
+  {
+    "id": "rhaenys",
+    "house": "targaryen",
+    "sagas": [
+      "hotd"
+    ],
+    "alive": false
+  },
+  {
+    "id": "corlys",
+    "house": "velaryon",
+    "sagas": [
+      "hotd"
+    ],
+    "alive": false
+  },
+  {
+    "id": "dunk",
+    "house": "",
+    "sagas": [
+      "dunk"
+    ],
+    "alive": false
+  },
+  {
+    "id": "egg",
+    "house": "targaryen",
+    "sagas": [
+      "dunk"
+    ],
+    "alive": false
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "kicker": "Cronología",
+  "title": "A través de las Eras",
+  "filters": {
+    "all": "Todos",
+    "got": "Juego de Tronos",
+    "hotd": "La Casa del Dragón",
+    "dunk": "El Caballero",
+    "lore": "Historia antigua"
+  },
+  "spoilerHint": "Spoiler — avanza tu punto de la saga",
+  "noEvents": "No hay eventos para este filtro."
+}

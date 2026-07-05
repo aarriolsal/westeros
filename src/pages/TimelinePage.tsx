@@ -1,23 +1,17 @@
 import { motion } from 'framer-motion'
-import { TIMELINE } from '../data/lore'
-import { SAGA_META } from '../data/progress'
-import { useProgress } from '../hooks/useProgress'
-import { useAppStore } from '../store/useAppStore'
-
-type FilterId = 'all' | 'got' | 'hotd' | 'dunk' | 'lore'
-
-const FILTERS: { id: FilterId; label: string }[] = [
-  { id: 'all', label: 'Todos' },
-  { id: 'got', label: 'Juego de Tronos' },
-  { id: 'hotd', label: 'La Casa del Dragón' },
-  { id: 'dunk', label: 'El Caballero' },
-  { id: 'lore', label: 'Historia antigua' },
-]
+import { useTranslation } from 'react-i18next'
+import { useDataStore } from '@/store/useDataStore'
+import { useProgress } from '@/hooks/useProgress'
+import { useAppStore } from '@/store/useAppStore'
+import { TIMELINE_FILTERS, type TimelineFilterId } from '@/config/timeline'
+import { translationNameSpace } from '@/config/lang'
 
 export default function TimelinePage() {
+  const { t } = useTranslation(translationNameSpace.timeline)
   const { tlFilter, setTlFilter } = useAppStore()
-  const { isTimelineLocked } = useProgress()
-  const activeFilter: FilterId = (tlFilter as FilterId) || 'all'
+  const { isTimelineLocked, SAGA_META } = useProgress()
+  const { timeline: TIMELINE } = useDataStore()
+  const activeFilter: TimelineFilterId = (tlFilter as TimelineFilterId) || 'all'
 
   const visible = TIMELINE.filter(ev =>
     activeFilter === 'all' ? true : ev.saga === activeFilter
@@ -40,7 +34,7 @@ export default function TimelinePage() {
           color: 'var(--color-gold-dim)',
           marginBottom: '0.4rem',
         }}>
-          Cronología
+          {t('kicker', 'Cronología')}
         </p>
         <h1 style={{
           fontFamily: 'Cinzel, serif',
@@ -50,7 +44,7 @@ export default function TimelinePage() {
           margin: 0,
           lineHeight: 1.15,
         }}>
-          A través de las Eras
+          {t('title', 'A través de las Eras')}
         </h1>
       </div>
 
@@ -61,7 +55,7 @@ export default function TimelinePage() {
         gap: '0.4rem',
         marginBottom: '2.75rem',
       }}>
-        {FILTERS.map(f => {
+        {TIMELINE_FILTERS.map(f => {
           const isActive = f.id === activeFilter
           const sagaColor = f.id !== 'all' ? SAGA_META[f.id]?.color : undefined
           return (
@@ -81,7 +75,7 @@ export default function TimelinePage() {
                 transition: 'all 0.2s',
               }}
             >
-              {f.label}
+              {t(f.labelKey)}
             </button>
           )
         })}
@@ -233,7 +227,7 @@ export default function TimelinePage() {
                           gap: '0.4rem',
                         }}>
                           <span>🔒</span>
-                          <span>Spoiler — avanza tu punto de la saga</span>
+                          <span>{t('spoilerHint', 'Spoiler — avanza tu punto de la saga')}</span>
                         </div>
                       </>
                     ) : (
@@ -273,7 +267,7 @@ export default function TimelinePage() {
           marginTop: '3rem',
           fontSize: '0.9rem',
         }}>
-          No hay eventos para este filtro.
+          {t('noEvents', 'No hay eventos para este filtro.')}
         </p>
       )}
     </section>

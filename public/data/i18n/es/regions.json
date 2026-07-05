@@ -1,0 +1,55 @@
+{
+  "crownlands": {
+    "name": "Las Coronas",
+    "tagline": "Desembarco del Rey",
+    "note": "Región capital en torno a Desembarco del Rey. Sede del Trono de Hierro y la corte real."
+  },
+  "north": {
+    "name": "El Norte",
+    "tagline": "Invernalia y los Stark",
+    "note": "Vastos territorios más allá del Cuello. Antiguo reino de los Primeros Hombres, hoy guardado por los Stark."
+  },
+  "westerlands": {
+    "name": "Tierras del Oeste",
+    "tagline": "Roca Casterly y los Lannister",
+    "note": "Ricas minas de oro bajo Roca Casterly. La Casa Lannister gobierna las tierras más ricas de Poniente."
+  },
+  "stormlands": {
+    "name": "Tierras de la Tormenta",
+    "tagline": "Bastión de Tormentas y Baratheon",
+    "note": "Costas escarpadas azotadas por tormentas. Cuna de la Casa Baratheon y de la rebelión de Robert."
+  },
+  "reach": {
+    "name": "El Dominio",
+    "tagline": "Altojardín y los Tyrell",
+    "note": "La región más poblada y fértil. La Casa Tyrell dispone de ejércitos numerosos y graneros sin fin."
+  },
+  "dorne": {
+    "name": "Dorne",
+    "tagline": "Lanza del Sol y los Martell",
+    "note": "Reino desértico jamás conquistado por Aegon. Se unió al reino por matrimonio y conserva sus propias costumbres."
+  },
+  "riverlands": {
+    "name": "Tierras de los Ríos",
+    "tagline": "Los Tully y el Tridente",
+    "note": "Tierras fértiles surcadas de ríos. Sede de la Casa Tully, campo de batalla constante durante la Guerra de los Cinco Reyes."
+  },
+  "vale": {
+    "name": "El Valle",
+    "tagline": "Nido de Águilas y los Arryn",
+    "note": "Reino de montaña con una fortaleza inexpugnable. La Casa Arryn ha guardado el Valle durante miles de años."
+  },
+  "iron": {
+    "name": "Islas del Hierro",
+    "tagline": "Pyke y los Greyjoy",
+    "note": "Islas rocosas de saqueadores y navegantes. Los Hombres del Hierro pagan el precio del hierro y no se arrodillan de buen grado."
+  },
+  "beyond": {
+    "name": "Más allá del Muro",
+    "tagline": "Tierras salvajes al norte del Muro",
+    "note": "Territorio helado y hostil, hogar del Pueblo Libre, los gigantes y, en las profundidades, de los Caminantes Blancos."
+  },
+  "essos": {
+    "name": "Essos"
+  }
+}

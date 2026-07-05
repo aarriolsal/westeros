@@ -1,0 +1,10 @@
+{
+  "kicker": "Geography",
+  "title": "The Continent of Westeros",
+  "hint": "Explore the map: drag and zoom, and select a region to see its lords, houses, and characters.",
+  "regionLabel": "Region",
+  "closePanelAria": "Close panel",
+  "housesHeading": "Houses",
+  "notableCharactersHeading": "Notable characters",
+  "placeSeatOf": "Seat of House {{house}}"
+}

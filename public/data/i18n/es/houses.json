@@ -1,0 +1,98 @@
+{
+  "targaryen": {
+    "name": "Targaryen",
+    "words": "Fuego y Sangre",
+    "seat": "Rocadragón / Fortaleza Roja",
+    "animal": "Dragón de tres cabezas",
+    "status": "Casa real caída; renacida en el exilio",
+    "summary": "Descendientes de la antigua Valyria, los Targaryen escaparon a la Maldición y conquistaron los Siete Reinos a lomos de dragones. Gobernaron casi 300 años hasta la Rebelión de Robert."
+  },
+  "stark": {
+    "name": "Stark",
+    "words": "Se acerca el invierno",
+    "seat": "Invernalia",
+    "animal": "Huargo",
+    "status": "Guardianes del Norte",
+    "summary": "Antigua estirpe de los Primeros Hombres, Reyes en el Norte durante milenios. Honorables y severos como su tierra, su lema es una advertencia, no una bravata."
+  },
+  "lannister": {
+    "name": "Lannister",
+    "words": "Oye mi rugido",
+    "seat": "Roca Casterly",
+    "animal": "León",
+    "status": "La casa más rica de Poniente",
+    "summary": "Señores de las minas de oro del Oeste. Astutos, orgullosos y temidos, su dicho extraoficial —\"Un Lannister siempre paga sus deudas\"— es tan célebre como su lema."
+  },
+  "baratheon": {
+    "name": "Baratheon",
+    "words": "Nuestra es la furia",
+    "seat": "Bastión de Tormentas",
+    "animal": "Venado coronado",
+    "status": "Casa real tras la Rebelión",
+    "summary": "La más joven de las grandes casas, fundada por Orys Baratheon. Robert ganó el Trono de Hierro; tras su muerte, sus hermanos y herederos lo despedazaron en guerra."
+  },
+  "tyrell": {
+    "name": "Tyrell",
+    "words": "Crecer fuerte",
+    "seat": "Altojardín",
+    "animal": "Rosa de oro",
+    "status": "Señores del Dominio",
+    "summary": "Antaño mayordomos, ahora señores de las tierras más fértiles y pobladas de Poniente. Maestros de la política, las alianzas y los ejércitos numerosos."
+  },
+  "martell": {
+    "name": "Martell",
+    "words": "Nunca doblegado, nunca roto",
+    "seat": "Lanza del Sol",
+    "animal": "Sol atravesado por una lanza",
+    "status": "Príncipes de Dorne",
+    "summary": "Únicos que resistieron la conquista de Aegon. Dorne se unió al reino por matrimonio, no por fuego, y conserva sus propias leyes y un carácter ardiente."
+  },
+  "tully": {
+    "name": "Tully",
+    "words": "Familia, Deber, Honor",
+    "seat": "Aguasdulces",
+    "animal": "Trucha saltarina",
+    "status": "Señores de los Ríos",
+    "summary": "Custodios del Tridente. Leales hasta el sacrificio, sus alianzas matrimoniales con Stark y Arryn fueron clave en la guerra contra los Lannister."
+  },
+  "arryn": {
+    "name": "Arryn",
+    "words": "Tan alto como el honor",
+    "seat": "Nido de Águilas",
+    "animal": "Halcón y luna",
+    "status": "Defensores del Valle",
+    "summary": "Descendientes de los Reyes de la Montaña y el Valle. Su fortaleza es inexpugnable, encaramada en lo alto de las Montañas de la Luna."
+  },
+  "greyjoy": {
+    "name": "Greyjoy",
+    "words": "Nosotros no sembramos",
+    "seat": "Pyke",
+    "animal": "Kraken",
+    "status": "Señores de las Islas del Hierro",
+    "summary": "Los Hombres del Hierro saquean en lugar de cosechar y \"pagan el precio del hierro\". Reyes rebeldes del mar, viven y mueren por la Vieja Costumbre."
+  },
+  "tarly": {
+    "name": "Tarly",
+    "words": "Primero en la batalla",
+    "seat": "Colina Cuerno",
+    "animal": "Cazador a zancadas",
+    "status": "Vasallos de los Tyrell",
+    "summary": "Reputados como los mejores soldados del Dominio. Lord Randyll Tarly es un comandante temido y un padre implacable con su hijo Samwell."
+  },
+  "hightower": {
+    "name": "Hightower",
+    "words": "Iluminamos el camino",
+    "seat": "Antigua",
+    "animal": "Faro de fuego",
+    "status": "Señores de Antigua",
+    "summary": "Una de las casas más antiguas y ricas, guardianes de la Ciudadela y el faro de la Torre Alta. Su influencia desató la Danza de los Dragones."
+  },
+  "velaryon": {
+    "name": "Velaryon",
+    "words": "El Viejo, el Verdadero, el Audaz",
+    "seat": "Marcaderiva",
+    "animal": "Hipocampo (caballo de mar)",
+    "status": "Señores de las Mareas",
+    "summary": "Casa de sangre valyria y la mayor flota de Poniente. La \"Serpiente Marina\", Corlys Velaryon, fue el hombre más rico y viajero del reino."
+  }
+}

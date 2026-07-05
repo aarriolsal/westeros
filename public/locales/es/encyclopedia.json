@@ -1,0 +1,16 @@
+{
+  "kicker": "Enciclopedia",
+  "title": "El Compendio",
+  "tabsAriaLabel": "Categorías del compendio",
+  "tabs": {
+    "characters": "Personajes",
+    "houses": "Casas",
+    "places": "Lugares"
+  },
+  "allHouses": "Todas",
+  "searchLabel": "Buscar en el compendio",
+  "searchPlaceholder": "Buscar en el compendio…",
+  "resultsCount_one": "{{count}} entrada",
+  "resultsCount_other": "{{count}} entradas",
+  "noResults": "No se encontraron resultados para tu búsqueda."
+}
